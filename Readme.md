@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Viacheslav Shvetsov](https://up.htmlacademy.ru/htmlcss/29/user/203969).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
