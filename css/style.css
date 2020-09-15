@@ -29,3 +29,21 @@
   font-weight: 700;
   font-style: normal;
 }
+
+:root {
+  --black-basic: #000000;
+  --black-light: #363636;
+
+  --gray-dark: #464646;
+  --gray-basic: #7E7E7E;
+  --gray-light: #E5E5E5;
+
+  --yellow-basic: #F0C52E;
+  --yellow-light: #F7E296;
+
+  --pink-basic: #F6DADA;
+
+  --white-basic: #FFFFFF;
+
+  --green-basic: #91C92F;
+}
