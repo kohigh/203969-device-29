@@ -103,6 +103,10 @@ img {
 /* Header End */
 
 /* Recommended Begin */
+.recommended-list {
+  list-style: none;
+}
+
 .recommended-title {
   font-family: 'Gilroy Bold', 'Arial', sans-serif;
   font-size: 47px;
