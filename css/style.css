@@ -48,6 +48,7 @@
   --green-basic: #91C92F;
 }
 
+/* Global Begin */
 body {
   min-width: 1240px;
   margin: 0;
@@ -66,7 +67,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Global End */
 
+/* Header Begin */
 .main-header {
   background-color: var(--yellow-light);
 }
@@ -91,7 +94,9 @@ img {
   text-transform: uppercase;
   color: var(--black-basic);
 }
+/* Header End */
 
+/* Recommended Begin */
 .recommended-title {
   font-family: 'Gilroy Bold', 'Arial', sans-serif;
   font-size: 47px;
@@ -118,4 +123,18 @@ img {
   font-size: 36px;
   line-height: 42px;
 }
+/* Recommended End */
 
+/* Categories Begin */
+.routes-categories {
+  list-style: none;
+}
+
+.routes-categories a {
+  background-color: var(--yellow-light);
+  font-family: "Gilroy Bold", 'Arial', sans-serif;
+  font-size: 18px;
+  color: var(--black-basic);
+  line-height: 22px;
+}
+/* Categories End */
