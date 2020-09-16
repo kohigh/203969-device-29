@@ -67,6 +67,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.section-title {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
 /* Global End */
 
 /* Header Begin */
@@ -180,3 +186,12 @@ img {
   list-style: none;
 }
 /* Partners End */
+
+/* About Us Begin */
+.delivery-providers {
+  list-style: none;
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+/* About Us End */
