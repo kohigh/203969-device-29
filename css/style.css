@@ -202,3 +202,26 @@ img {
 
 /* Contacts Begin */
 /* Contactts End */
+
+/* Footer Begin */
+.footer {
+  background-color: var(--black-light);
+  color: var(--white-basic);
+}
+/* Footer End */
+
+/* Address Begin */
+.address {
+  line-height: 20px;
+}
+
+.address-tel {
+  color: var(--white-basic)
+}
+/* Address End */
+
+/* Social Begin */
+.social-list {
+  list-style: none;
+}
+/* Social End */
