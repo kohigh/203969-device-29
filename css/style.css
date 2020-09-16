@@ -91,3 +91,31 @@ img {
   text-transform: uppercase;
   color: var(--black-basic);
 }
+
+.recommended-title {
+  font-family: 'Gilroy Bold', 'Arial', sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.recommended-description {
+  line-height: 20px;
+}
+
+.recommended-link {
+  font-family: 'Gilroy Bold', 'Arial', sans-serif;
+  color: var(--black-basic);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.recommended-attr {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.recommended-value {
+  font-size: 36px;
+  line-height: 42px;
+}
+
