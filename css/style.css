@@ -174,3 +174,9 @@ img {
   line-height: 28px;
 }
 /* Advantages End */
+
+/* Partners Begin */
+.partners-list {
+  list-style: none;
+}
+/* Partners End */
