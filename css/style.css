@@ -1,32 +1,32 @@
 @font-face {
   font-family: 'Gilroy Light';
-  src: url("/fonts/gilroylight.woff2"),
-       url("/fonts/gilroylight.woff");
-  font-weight: 400;
+  src: url("../fonts/gilroylight.woff2"),
+       url("../fonts/gilroylight.woff");
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy Bold';
-  src: url("/fonts/gilroyextrabold.woff2"),
-  url("/fonts/gilroyextrabold.woff");
-  font-weight: 700;
+  src: url("../fonts/gilroyextrabold.woff2"),
+  url("../fonts/gilroyextrabold.woff");
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url("/fonts/opensans.woff2"),
-  url("/fonts/opensans.woff");
-  font-weight: 400;
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/opensans.woff2"),
+  url("../fonts/opensans.woff");
+  font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans Light';
-  src: url("/fonts/opensanslight.woff2"),
-  url("/fonts/opensanslight.woff");
-  font-weight: 700;
+  src: url("../fonts/opensanslight.woff2"),
+  url("../fonts/opensanslight.woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -52,7 +52,7 @@ body {
   min-width: 1240px;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans Light', 'Arial', sans-serif;
   font-size: 15px;
   line-height: 28px;
   color: var(--black-basic);
@@ -65,4 +65,29 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main-header {
+  background-color: var(--yellow-light);
+}
+
+.routes-user {
+  list-style: none;
+}
+
+.routes-user a {
+  line-height: 20px;
+  color: var(--black-basic);
+}
+
+.routes-site {
+  list-style: none;
+}
+
+.routes-site a {
+  font-family: 'Gilroy Bold', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--black-basic);
 }
