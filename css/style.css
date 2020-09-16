@@ -138,3 +138,39 @@ img {
   line-height: 22px;
 }
 /* Categories End */
+
+/* Advantages Begin */
+.advantages {
+  background-color: var(--gray-light);
+}
+
+.advantages-tags {
+  list-style: none;
+}
+
+.advantages-tag {
+  font-family: 'Gilroy Bold', 'Arial', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--black-basic);
+  line-height: 22px;
+}
+
+.advantages-descriptions {
+  list-style: none;
+}
+
+.advantages-definitions {
+  list-style: none;
+}
+
+.advantages-title {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.advantages-definition {
+  line-height: 28px;
+}
+/* Advantages End */
