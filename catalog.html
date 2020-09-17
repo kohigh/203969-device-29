@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
@@ -36,15 +37,17 @@
           <li>Моноподы для селфи</li>
         </ul>
       </header>
-      <aside>
-        <h2 class="section-title-catalog">Фильтр:</h2>
+      <aside class="filters">
+        <header class="filters-header">
+          <h2 class="section-title-uppercase">Фильтр:</h2>
+        </header>
         <!--        Здесь будет форма фильтра-->
       </aside>
       <section class="products">
         <h2>Товары</h2>
-        <header>
-          <h3 class="section-title-catalog">Сортировка:</h3>
-          <ul class="sorting-attrs">
+        <header class="products-header">
+          <h3 class="section-title-uppercase">Сортировка:</h3>
+          <ul class="sorting">
             <li><a class="sorting-attr active-sorting-attr" href="">По цене</a></li>
             <li><a class="sorting-attr" href="">По типу</a></li>
             <li><a class="sorting-attr" href="">По популярности</a></li>
@@ -90,7 +93,7 @@
             </article>
           </li>
         </ul>
-        <footer>
+        <footer class="products-footer">
           <ul class="pagination">
             <li><a class="pagination-link pagination-active-link" href="">Назад</a></li>
             <li><a class="pagination-link pagination-active-link">1</a></li>

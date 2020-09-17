@@ -34,9 +34,11 @@
   --black-basic: #000000;
   --black-light: #363636;
 
+  --gray-darkest: #DCDCDC;
   --gray-dark: #464646;
   --gray-basic: #7E7E7E;
   --gray-light: #E5E5E5;
+  --gray-lightest: #EBEBEB;
 
   --yellow-basic: #F0C52E;
   --yellow-light: #F7E296;
@@ -74,10 +76,11 @@ img {
   line-height: 58px;
 }
 
-.section-title-catalog {
+.section-title-uppercase {
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .button {
@@ -157,7 +160,7 @@ img {
 /* Breadcrumbs End */
 
 /* Sorting Begin */
-.sorting-attrs,
+.sorting,
 .sorting-order {
   list-style: none;
 }
@@ -298,6 +301,10 @@ img {
 /* Social End */
 
 /* Products Begin*/
+.products-header {
+  background-color: var(--gray-light);
+}
+
 .products-list {
   list-style: none;
 }
@@ -313,6 +320,10 @@ img {
   font-family: "Gilroy Light", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+}
+
+.products-footer {
+  background-color: var(--gray-lightest);
 }
 /* Products End*/
 
@@ -334,3 +345,13 @@ img {
   opacity: 1;
 }
 /* Pagination End*/
+
+/* Filters Begin */
+.filters {
+  background-color: var(--gray-lightest);
+}
+
+.filters-header {
+  background-color: var(--gray-darkest);
+}
+/* Filters End */
