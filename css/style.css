@@ -74,6 +74,12 @@ img {
   line-height: 58px;
 }
 
+.section-title-catalog {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .button {
   font-family: "Gilroy Bold", "Arial", sans-serif;
   color: var(--black-basic);
@@ -97,16 +103,26 @@ img {
 }
 
 .user-routes-link:hover,
-.user-routes-transparent-link {
+.darkmode-link {
   opacity: 0.7;
 }
 
-.user-routes-transparent-link:hover {
+.darkmode-link:hover {
   opacity: 1;
 }
 
-.user-routes-link:active {
+.user-routes-link:active,
+.transparent-link,
+.breadcrumbs {
   opacity: 0.3;
+}
+
+.transparent-link:hover {
+  opacity: 0.15;
+}
+
+.transparent-link:active {
+  opacity: calc(0.15/2);
 }
 
 .site-routes {
@@ -129,6 +145,44 @@ img {
   opacity: 0.3;
 }
 /* Header End */
+
+/* Breadcrumbs Begin */
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: var(--black-basic);
+}
+/* Breadcrumbs End */
+
+/* Sorting Begin */
+.sorting-attrs,
+.sorting-order {
+  list-style: none;
+}
+
+.sorting-attr {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--black-basic);
+  opacity: 0.3;
+}
+
+.sorting-order-attr {
+  color: var(--black-basic);
+  opacity: 0.2;
+}
+
+.active-sorting-order-attr,
+.active-sorting-attr {
+  opacity: 1;
+}
+/* Sorting End */
+
+/**/
+
+/**/
 
 /* Recommended Begin */
 .recommended-list {
