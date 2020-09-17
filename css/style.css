@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../fonts/gilroylight.woff2"),
+       url("../fonts/gilroylight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url("../fonts/gilroyextrabold.woff2"),
+  url("../fonts/gilroyextrabold.woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/opensans.woff2"),
+  url("../fonts/opensans.woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff2"),
+  url("../fonts/opensanslight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --black-basic: #000000;
+  --black-light: #363636;
+
+  --gray-dark: #464646;
+  --gray-basic: #7E7E7E;
+  --gray-light: #E5E5E5;
+
+  --yellow-basic: #F0C52E;
+  --yellow-light: #F7E296;
+
+  --pink-basic: #F6DADA;
+
+  --white-basic: #FFFFFF;
+
+  --green-basic: #91C92F;
+}
+
+/* Global Begin */
+body {
+  min-width: 1240px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--black-basic);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.button {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  color: var(--black-basic);
+  font-size: 18px;
+  line-height: 22px;
+}
+/* Global End */
+
+/* Header Begin */
+.main-header {
+  background-color: var(--yellow-light);
+}
+
+.user-routes {
+  list-style: none;
+}
+
+.user-routes-link {
+  line-height: 20px;
+  color: inherit;
+}
+
+.user-routes-link:hover,
+.user-routes-transparent-link {
+  opacity: 0.7;
+}
+
+.user-routes-transparent-link:hover {
+  opacity: 1;
+}
+
+.user-routes-link:active {
+  opacity: 0.3;
+}
+
+.site-routes {
+  list-style: none;
+}
+
+.site-routes-link {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.site-routes-link:hover {
+  opacity: 0.6;
+}
+
+.site-routes-link:active {
+  opacity: 0.3;
+}
+/* Header End */
+
+/* Recommended Begin */
+.recommended-list {
+  list-style: none;
+}
+
+.recommended-description {
+  line-height: 20px;
+}
+
+.recommended-attr {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.recommended-value {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+/* Recommended End */
+
+/* Categories Begin */
+.categories-routes {
+  list-style: none;
+}
+
+.categories-routes-link {
+  background-color: var(--yellow-light);
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 18px;
+  color: var(--black-basic);
+  line-height: 22px;
+}
+/* Categories End */
+
+/* Advantages Begin */
+.advantages {
+  background-color: var(--gray-light);
+}
+
+.advantages-tags {
+  list-style: none;
+}
+
+.advantages-tag {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--black-basic);
+  line-height: 22px;
+}
+
+.advantages-descriptions {
+  list-style: none;
+}
+
+.advantages-definitions {
+  list-style: none;
+}
+
+.advantages-title {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.advantages-definition {
+  line-height: 28px;
+}
+/* Advantages End */
+
+/* Partners Begin */
+.partners-list {
+  list-style: none;
+}
+/* Partners End */
+
+/* About Us Begin */
+.delivery-providers {
+  list-style: none;
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+/* About Us End */
+
+/* Contacts Begin */
+/* Contactts End */
+
+/* Footer Begin */
+.footer {
+  background-color: var(--black-light);
+  color: var(--white-basic);
+}
+/* Footer End */
+
+/* Address Begin */
+.address {
+  line-height: 20px;
+}
+
+.address-tel {
+  color: var(--white-basic)
+}
+/* Address End */
+
+/* Social Begin */
+.social-list {
+  list-style: none;
+}
+/* Social End */
