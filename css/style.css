@@ -296,3 +296,22 @@ img {
   list-style: none;
 }
 /* Social End */
+
+/* Products Begin*/
+.products-list {
+  list-style: none;
+}
+
+.product-link {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  color: var(--black-basic);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.product-price {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+/* Products End*/
