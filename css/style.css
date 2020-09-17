@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Gilroy Light';
+  font-family: "Gilroy Light";
   src: url("../fonts/gilroylight.woff2"),
        url("../fonts/gilroylight.woff");
   font-weight: 300;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Gilroy Bold';
+  font-family: "Gilroy Bold";
   src: url("../fonts/gilroyextrabold.woff2"),
   url("../fonts/gilroyextrabold.woff");
   font-weight: 800;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans Bold';
+  font-family: "Open Sans Bold";
   src: url("../fonts/opensans.woff2"),
   url("../fonts/opensans.woff");
   font-weight: 800;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans Light';
+  font-family: "Open Sans Light";
   src: url("../fonts/opensanslight.woff2"),
   url("../fonts/opensanslight.woff");
   font-weight: 300;
@@ -53,7 +53,7 @@ body {
   min-width: 1240px;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans Light', 'Arial', sans-serif;
+  font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 15px;
   line-height: 28px;
   color: var(--black-basic);
@@ -114,7 +114,7 @@ img {
 }
 
 .site-routes-link {
-  font-family: 'Gilroy Bold', 'Arial', sans-serif;
+  font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
@@ -159,7 +159,7 @@ img {
 
 .categories-routes-link {
   background-color: var(--yellow-light);
-  font-family: "Gilroy Bold", 'Arial', sans-serif;
+  font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 18px;
   color: var(--black-basic);
   line-height: 22px;
@@ -176,7 +176,7 @@ img {
 }
 
 .advantages-tag {
-  font-family: 'Gilroy Bold', 'Arial', sans-serif;
+  font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   color: var(--black-basic);
