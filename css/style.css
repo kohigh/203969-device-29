@@ -315,3 +315,22 @@ img {
   line-height: 18px;
 }
 /* Products End*/
+
+/* Pagination Begin*/
+.pagination {
+  list-style: none;
+}
+
+.pagination-link {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black-basic);
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+.pagination-active-link {
+  opacity: 1;
+}
+/* Pagination End*/
