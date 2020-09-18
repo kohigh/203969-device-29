@@ -2,120 +2,129 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <header>
-    <nav>
-      <a href="index.html">
-        <img src="https://via.placeholder.com/163x35" alt="Лого онлайн магазина «Device»">
-      </a>
-      <ul>
-        <li><a href="">Поиск по сайту</a></li>
-        <li><a href="">Валентин Петухов</a></li>
-        <li><a href="">Выйти</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
-      </ul>
-      <ul>
-        <li><a>Каталог товаров</a></li>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="main-header">
+      <nav>
+        <a>
+          <img src="https://via.placeholder.com/163x35" alt="Лого онлайн магазина «Device»">
+        </a>
+        <ul class="user-routes">
+          <li><a class="user-routes-link" href="">Поиск по сайту</a></li>
+          <li><a class="user-routes-link" href="">Валентин Петухов</a></li>
+          <li><a class="user-routes-link transparent-link" href="">Выйти</a></li>
+          <li><a class="user-routes-link" href="">Сравнить</a></li>
+          <li><a class="user-routes-link" href="">Корзина</a></li>
+        </ul>
+        <ul class="site-routes">
+          <li><a class="site-routes-link" href="./catalog.html">Каталог товаров</a></li>
+          <li><a class="site-routes-link" href="">Доставка</a></li>
+          <li><a class="site-routes-link" href="">Гарантия</a></li>
+          <li><a class="site-routes-link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>Каталог товаров</h1>
       <header>
         <h2>Моноподы для селфи</h2>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a>Каталог товаров</a></li>
-          <li>Моноподы для селфи</li>
+        <ul class="breadcrumbs">
+          <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+          <li><a class="breadcrumbs-link" href="">Каталог товаров</a></li>
+          <li><a class="breadcrumbs-link">Моноподы для селфи</a></li>
         </ul>
       </header>
-      <section>
-        <h2>Фильтр товаров</h2>
+      <aside class="filters">
+        <header class="filters-header">
+          <h2 class="section-title-uppercase">Фильтр:</h2>
+        </header>
         <!--        Здесь будет форма фильтра-->
-      </section>
-      <section>
-        <header>
-          <h2>Сортировка товаров</h2>
-          <ul>
-            <li><a href="">По цене</a></li>
-            <li><a href="">По типу</a></li>
-            <li><a href="">По популярности</a></li>
+      </aside>
+      <section class="products">
+        <h2>Товары</h2>
+        <header class="products-header">
+          <h3 class="section-title-uppercase">Сортировка:</h3>
+          <ul class="sorting">
+            <li><a class="sorting-attr selected-sorting" href="">По цене</a></li>
+            <li><a class="sorting-attr" href="">По типу</a></li>
+            <li><a class="sorting-attr" href="">По популярности</a></li>
           </ul>
-          <ul>
-            <li><a href="">По возрастанию</a></li>
-            <li><a href="">По убыванию</a></li>
+          <ul class="sorting-order">
+            <li><a class="sorting-order-attr" href="">По возрастанию</a></li>
+            <li><a class="sorting-order-attr selected-sorting-order" href="">По убыванию</a></li>
           </ul>
         </header>
-        <ul>
+        <ul class="products-list">
           <li>
             <article>
               <h3>Любительская селфи-палка</h3>
               <img src="https://via.placeholder.com/360x380" alt="Любительская селфи-палка">
-              <a href="">Любительская селфи-палка<span>500 руб.</span></a>
+              <a class="product-link" href="">Любительская селфи-палка<span class="product-price">500 руб.</span></a>
             </article>
           </li>
           <li>
             <article>
               <h3>Профессиональная селфи-палка</h3>
               <img src="https://via.placeholder.com/360x380" alt="Профессиональная селфи-палка">
-              <a href="">Профессиональная селфи-палка<span>1 500 руб.</span></a>
+              <a class="product-link" href="">
+                Профессиональная селфи-палка<span class="product-price">1 500 руб.</span>
+              </a>
             </article>
           </li>
           <li>
             <article>
               <h3>Непотопляемая селфи-палка</h3>
               <img src="https://via.placeholder.com/360x380" alt="Непотопляемая селфи-палка">
-              <a href="">Непотопляемая селфи-палка<span>2 500 руб.</span></a>
+              <a class="product-link" href="">
+                Непотопляемая селфи-палка<span class="product-price">2 500 руб.</span>
+              </a>
             </article>
           </li>
           <li>
             <article>
               <h3>Селфи-палка «Следуй за мной»</h3>
               <img src="https://via.placeholder.com/360x380" alt="Селфи-палка «Следуй за мной»">
-              <a href="">Селфи-палка «Следуй за мной»<span>4 900 руб.</span></a>
+              <a class="product-link" href="">
+                Селфи-палка «Следуй за мной»<span class="product-price">4 900 руб.</span>
+              </a>
             </article>
           </li>
         </ul>
-        <footer>
-          <ul>
-            <li><a href="">Назад</a></li>
-            <li><a>1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">Вперед</a></li>
+        <footer class="products-footer">
+          <ul class="pagination">
+            <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Назад</a></li>
+            <li><a class="pagination-link selected-pagination">1</a></li>
+            <li><a class="pagination-link" href="">2</a></li>
+            <li><a class="pagination-link" href="">3</a></li>
+            <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Вперед</a></li>
           </ul>
         </footer>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <a href=""><img src="https://via.placeholder.com/163x35" alt="Лого онлайн магазина «Device»"></a>
-      <ul>
-        <li><a href="">Валентин Петухов</a></li>
-        <li><a href="">Выйти</a></li>
-        <li><a href="">Сравнить</a></li>
-        <li><a href="">Корзина</a></li>
+      <ul class="user-routes">
+        <li><a class="user-routes-link darkmode-link" href="">Валентин Петухов</a></li>
+        <li><a class="user-routes-link darkmode-link" href="">Выйти</a></li>
+        <li><a class="user-routes-link darkmode-link" href="">Сравнить</a></li>
+        <li><a class="user-routes-link darkmode-link" href="">Корзина</a></li>
       </ul>
-      <section>
+      <section class="address">
         <h2>Наш адрес</h2>
         <address>г. Москва, ул. Строителей, 15</address>
-        <a href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
+        <a class="address-tel" href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
       </section>
-      <ul>
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Контакты</a></li>
+      <ul class="site-routes">
+        <li><a class="site-routes-link" href="">Доставка</a></li>
+        <li><a class="site-routes-link" href="">Гарантия</a></li>
+        <li><a class="site-routes-link" href="">Контакты</a></li>
       </ul>
-      <section>
+      <section class="social">
         <h2>Наши контакты</h2>
-        <ul>
+        <ul class="social-list">
           <li><a href="">Фейсбук</a></li>
           <li><a href="">Инстаграм</a></li>
           <li><a href="">Твиттер</a></li>
