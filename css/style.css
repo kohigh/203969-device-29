@@ -71,6 +71,16 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 .section-title {
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 47px;
