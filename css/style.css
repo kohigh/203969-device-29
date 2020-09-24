@@ -365,6 +365,12 @@ img {
 /* Advantages End */
 
 /* Partners Begin */
+.partners-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
 .partners-list {
   list-style: none;
 }
