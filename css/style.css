@@ -297,10 +297,18 @@ img {
 
 /* Categories Begin */
 .categories-routes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+}
+
+.categories-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.categories-routes-link {
+.categories-list-link {
   background-color: var(--yellow-light);
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 18px;
