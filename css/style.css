@@ -324,7 +324,7 @@ img {
 
 .advantages_wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: max-content 1fr;
 }
 
 .advantages-nav {
