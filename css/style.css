@@ -322,7 +322,18 @@ img {
   background-color: var(--gray-light);
 }
 
+.advantages_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.advantages-nav {
+  display: grid;
+}
+
 .advantages-tags {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
