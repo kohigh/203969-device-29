@@ -94,6 +94,11 @@ img {
   margin: -1px;
 }
 
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .section-title {
   margin: 0;
   padding: 0;
@@ -377,7 +382,13 @@ img {
 /* Partners End */
 
 /* About Us Begin */
+.about-us {
+  display: grid;
+}
+
 .delivery-providers {
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 16px;
@@ -386,6 +397,9 @@ img {
 /* About Us End */
 
 /* Contacts Begin */
+.contacts {
+  display: grid;
+}
 /* Contactts End */
 
 /* Footer Begin */
