@@ -152,6 +152,7 @@ img {
 .user-routes-link {
   line-height: 20px;
   color: inherit;
+  margin-right: 40px;
 }
 
 .user-routes-link:hover,
@@ -406,6 +407,44 @@ img {
 .footer {
   background-color: var(--black-light);
   color: var(--white-basic);
+  display: grid;
+  grid-template-areas:
+    "logo . user-routes"
+    "address-phys site-routes address-tel"
+    ". social developer";
+}
+
+.footer-logo {
+  grid-area: logo;
+}
+
+.footer-user-routes {
+  grid-area: user-routes;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+}
+
+.footer-address-phys {
+  grid-area: address-phys;
+}
+
+.footer-site-routes {
+  grid-area: site-routes;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  column-gap: 36px
+}
+
+.footer-address-tel {
+  grid-area: address-tel;
+}
+
+.footer-social {
+  grid-area: social;
+}
+
+.footer-developer {
+  grid-area: developer;
 }
 /* Footer End */
 
@@ -420,6 +459,12 @@ img {
 /* Address End */
 
 /* Social Begin */
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 20px;
+}
+
 .social-list {
   list-style: none;
 }
