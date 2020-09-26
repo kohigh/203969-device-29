@@ -321,6 +321,10 @@ img {
 /* Recommended End */
 
 /* Categories Begin */
+.categories {
+  height: 282px;
+}
+
 .categories-routes {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
