@@ -275,6 +275,8 @@ img {
 
 /* Recommended Begin */
 .recommended-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -283,14 +285,21 @@ img {
   grid-template-columns: 1fr 1fr;
 }
 
+.recommended-product-img {
+  margin: 0 auto;
+  padding: 0;
+}
+
 .recommended-product-about {
   display: grid;
   align-content: end;
-  grid-gap: 30px;
+  row-gap: 30px;
 }
 
 .recommended-product-description {
   line-height: 20px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
 }
 
