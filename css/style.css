@@ -348,6 +348,7 @@ img {
 
 /* Advantages Begin */
 .advantages {
+  height: 288px;
   background-color: var(--gray-light);
 }
 
@@ -394,13 +395,18 @@ img {
 /* Advantages End */
 
 /* Partners Begin */
+.partners {
+  height: 100px;
+}
+
 .partners-nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
 }
 
 .partners-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 /* Partners End */
