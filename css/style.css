@@ -124,7 +124,7 @@ img {
 
 /* Header Begin */
 .main-header {
-  background-color: var(--yellow-light);
+  background-image: linear-gradient(var(--white-basic) 20px, var(--yellow-light) 20px);
   margin-top: 40px;
 }
 
@@ -132,10 +132,6 @@ img {
   display: grid;
   grid-template-rows: min-content min-content 1fr;
   margin: 0 60px;
-}
-
-.main-nav .logo {
-  margin-top: -20px;
 }
 
 .user-routes {
