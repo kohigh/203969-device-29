@@ -71,7 +71,37 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .section-title {
+  margin: 0;
+  padding: 0;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 47px;
   line-height: 58px;
@@ -94,11 +124,31 @@ img {
 
 /* Header Begin */
 .main-header {
-  background-color: var(--yellow-light);
+  background-image: linear-gradient(var(--white-basic) 20px, var(--yellow-light) 20px);
+  margin-top: 40px;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-rows: min-content min-content 1fr;
+  margin: 0 60px;
 }
 
 .user-routes {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-user-routes {
+  margin-top: 29px;
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr 1fr;
+}
+
+.main-nav-route-item:nth-child(3),
+.main-nav-route-item:nth-child(4) {
+  justify-self: right;
 }
 
 .user-routes-link {
@@ -131,6 +181,18 @@ img {
 
 .site-routes {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-site-routes {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 2fr;
+}
+
+.main-nav-site-routes li:last-child {
+  justify-self: right;
 }
 
 .site-routes-link {
@@ -209,11 +271,36 @@ img {
 
 /* Recommended Begin */
 .recommended-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.recommended-description {
+.recommended-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.recommended-product-img {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.recommended-product-about {
+  display: grid;
+  align-content: end;
+  row-gap: 30px;
+}
+
+.recommended-product-description {
   line-height: 20px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.recommended-product-table {
+  margin-top: 30px;
 }
 
 .recommended-attr {
@@ -230,11 +317,23 @@ img {
 /* Recommended End */
 
 /* Categories Begin */
+.categories {
+  min-height: 282px;
+}
+
 .categories-routes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 40px;
+}
+
+.categories-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.categories-routes-link {
+.categories-list-link {
   background-color: var(--yellow-light);
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -245,10 +344,22 @@ img {
 
 /* Advantages Begin */
 .advantages {
+  min-height: 288px;
   background-color: var(--gray-light);
 }
 
+.advantages_wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+.advantages-nav {
+  display: grid;
+}
+
 .advantages-tags {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -280,13 +391,30 @@ img {
 /* Advantages End */
 
 /* Partners Begin */
+.partners {
+  min-height: 100px;
+}
+
+.partners-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .partners-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 /* Partners End */
 
 /* About Us Begin */
+.about-us {
+  display: grid;
+}
+
 .delivery-providers {
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 16px;
@@ -295,12 +423,68 @@ img {
 /* About Us End */
 
 /* Contacts Begin */
+.contacts {
+  display: grid;
+}
 /* Contactts End */
 
 /* Footer Begin */
 .footer {
   background-color: var(--black-light);
   color: var(--white-basic);
+}
+
+.footer_wrapper {
+  display: grid;
+  grid-template-areas:
+    "logo . user-routes"
+    "address-phys site-routes address-tel"
+    ". social copyright";
+}
+
+.footer-logo {
+  grid-area: logo;
+  margin-top: 64px;
+  margin-bottom: 40px;
+}
+
+.footer-user-routes {
+  grid-area: user-routes;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: right;
+  margin-top: 46px;
+}
+
+.footer-address-phys {
+  grid-area: address-phys;
+}
+
+.footer-site-routes-wrapper {
+  grid-area: site-routes;
+  margin: 0 auto;
+  margin-bottom: 67px;
+}
+
+.footer-site-routes {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  column-gap: 36px
+}
+
+.footer-address-tel {
+  grid-area: address-tel;
+  justify-self: right;
+}
+
+.footer-social {
+  grid-area: social;
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  grid-area: copyright;
+  justify-self: right;
 }
 /* Footer End */
 
@@ -315,6 +499,12 @@ img {
 /* Address End */
 
 /* Social Begin */
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 20px;
+}
+
 .social-list {
   list-style: none;
 }
