@@ -318,7 +318,7 @@ img {
 
 /* Categories Begin */
 .categories {
-  height: 282px;
+  min-height: 282px;
 }
 
 .categories-routes {
@@ -344,7 +344,7 @@ img {
 
 /* Advantages Begin */
 .advantages {
-  height: 288px;
+  min-height: 288px;
   background-color: var(--gray-light);
 }
 
@@ -392,7 +392,7 @@ img {
 
 /* Partners Begin */
 .partners {
-  height: 100px;
+  min-height: 100px;
 }
 
 .partners-nav {
