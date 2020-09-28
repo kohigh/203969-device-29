@@ -143,11 +143,36 @@ img {
 .main-nav-user-routes {
   margin-top: 29px;
   display: grid;
-  grid-template-columns: 4fr 2fr 1fr 1fr;
+  grid-template-columns: 1 / 8;
 }
 
-.main-nav-route-item:nth-child(3),
-.main-nav-route-item:nth-child(4) {
+.main-nav-route-search {
+  grid-column: 1 / 4;
+}
+
+.main-nav-route-login {
+  grid-column: 4 / 6;
+  justify-self: right;
+}
+
+.main-nav-route-logged {
+  grid-column: 4 / 5;
+  justify-self: right;
+}
+
+.main-nav-route-exit {
+  grid-column: 5 / 6;
+  justify-self: left;
+  padding-left: 20px;
+}
+
+.main-nav-route-compare {
+  grid-column: 6 / 7;
+  justify-self: right;
+}
+
+.main-nav-route-cart {
+  grid-column: 7 / 8;
   justify-self: right;
 }
 
