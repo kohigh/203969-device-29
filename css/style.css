@@ -52,6 +52,16 @@
 }
 
 /* Global Begin */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   min-width: 1240px;
   margin: 0;
@@ -121,6 +131,10 @@ img {
   line-height: 22px;
 }
 /* Global End */
+
+.catalog-header {
+  padding: 0 60px;
+}
 
 /* Header Begin */
 .main-header {
@@ -238,7 +252,15 @@ img {
 /* Header End */
 
 /* Breadcrumbs Begin */
+.main-breadcrumbs {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 40px;
+}
+
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
