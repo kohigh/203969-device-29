@@ -635,17 +635,29 @@ img {
 
 .products-footer {
   background-color: var(--gray-lightest);
+  margin-left: 72px;
+  margin-top: 40px;
+  margin-bottom: 78px;
 }
 /* Products End*/
 
 /* Pagination Begin*/
 .pagination {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.catalog-pagination {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr repeat(3, min-content) 1fr;
+}
+
 .pagination-prev-next {
-  width: 120px;
   height: 70px;
+  padding: 25px 30px;
 }
 
 .pagination-prev-next:hover,
@@ -660,6 +672,14 @@ img {
   color: var(--black-basic);
   opacity: 0.3;
   text-transform: uppercase;
+}
+
+.pagination-prev-next:first-child {
+  margin-right: 247px;
+}
+
+.pagination-prev-next:last-child {
+  margin-left: 252px;
 }
 
 .pagination-link:hover {
