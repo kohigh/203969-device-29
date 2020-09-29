@@ -133,7 +133,13 @@ img {
 /* Global End */
 
 .catalog-header {
+  margin-top: 44px;
   padding: 0 60px;
+}
+
+.catalog-content {
+  display: grid;
+  grid-template-columns: max-content 1fr;
 }
 
 /* Header Begin */
@@ -146,6 +152,7 @@ img {
   display: grid;
   grid-template-rows: min-content min-content 1fr;
   margin: 0 60px;
+  min-height: 186px;
 }
 
 .user-routes {
@@ -252,16 +259,18 @@ img {
 /* Header End */
 
 /* Breadcrumbs Begin */
-.main-breadcrumbs {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  grid-gap: 40px;
-}
-
 .breadcrumbs {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.catalog-breadcrumbs {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs-link {
@@ -281,7 +290,22 @@ img {
 /* Sorting Begin */
 .sorting,
 .sorting-order {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.catalog-sorting {
+  margin-left: 74px;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-gap: 30px;
+}
+
+.catalog-sorting-order {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 23px;
 }
 
 .sorting-attr {
@@ -560,6 +584,21 @@ img {
 /* Products Begin*/
 .products-header {
   background-color: var(--gray-light);
+  padding-left: 72px;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+}
+
+.products-header::after {
+  content: "";
+  position: absolute;
+  top: 427px;
+  left: 50vw;
+  height: 70px;
+  width: 50vw;
+  background-color: var(--gray-light);
+  z-index: -1;
 }
 
 .products-list {
@@ -629,9 +668,25 @@ img {
 /* Filters Begin */
 .filters {
   background-color: var(--gray-lightest);
+  display: grid;
+  grid-template-rows: min-content 1fr;
 }
 
 .filters-header {
   background-color: var(--gray-darkest);
+  min-height: 70px;
+  padding: 0 60px;
+  padding-right: 193px;
+}
+
+.filters-header::before {
+  content: "";
+  position: absolute;
+  top: 427px;
+  left: 0;
+  height: 70px;
+  width: 50vw;
+  background-color: var(--gray-darkest);
+  z-index: -1;
 }
 /* Filters End */

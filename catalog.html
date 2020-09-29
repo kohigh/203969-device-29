@@ -30,79 +30,81 @@
     <main>
       <h1 class="visually-hidden">Каталог товаров</h1>
       <header class="container catalog-header">
-        <h2>Моноподы для селфи</h2>
-        <ul class="main-breadcrumbs breadcrumbs">
+        <h2 class="section-title">Моноподы для селфи</h2>
+        <ul class="catalog-breadcrumbs breadcrumbs">
           <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
           <li><a class="breadcrumbs-link" href="">Каталог товаров</a></li>
           <li><a class="breadcrumbs-link">Моноподы для селфи</a></li>
         </ul>
       </header>
-      <aside class="filters">
-        <header class="filters-header">
-          <h2 class="section-title-uppercase">Фильтр:</h2>
-        </header>
-        <!--        Здесь будет форма фильтра-->
-      </aside>
-      <section class="products">
-        <h2>Товары</h2>
-        <header class="products-header">
-          <h3 class="section-title-uppercase">Сортировка:</h3>
-          <ul class="sorting">
-            <li><a class="sorting-attr selected-sorting" href="">По цене</a></li>
-            <li><a class="sorting-attr" href="">По типу</a></li>
-            <li><a class="sorting-attr" href="">По популярности</a></li>
+      <div class="container catalog-content">
+        <aside class="filters">
+          <header class="filters-header">
+            <h2 class="section-title-uppercase">Фильтр:</h2>
+          </header>
+          <!--        Здесь будет форма фильтра-->
+        </aside>
+        <section class="products">
+          <h2 class="visually-hidden">Товары</h2>
+          <header class="products-header">
+            <h3 class="section-title-uppercase">Сортировка:</h3>
+            <ul class="catalog-sorting sorting">
+              <li><a class="sorting-attr selected-sorting" href="">По цене</a></li>
+              <li><a class="sorting-attr" href="">По типу</a></li>
+              <li><a class="sorting-attr" href="">По популярности</a></li>
+            </ul>
+            <ul class="catalog-sorting-order sorting-order">
+              <li><a class="sorting-order-attr" href="">По возрастанию</a></li>
+              <li><a class="sorting-order-attr selected-sorting-order" href="">По убыванию</a></li>
+            </ul>
+          </header>
+          <ul class="products-list">
+            <li>
+              <article>
+                <h3>Любительская селфи-палка</h3>
+                <img src="img/products-item1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                <a class="product-link" href="">Любительская селфи-палка<span class="product-price">500 руб.</span></a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Профессиональная селфи-палка</h3>
+                <img src="img/products-item2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <a class="product-link" href="">
+                  Профессиональная селфи-палка<span class="product-price">1 500 руб.</span>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Непотопляемая селфи-палка</h3>
+                <img src="img/products-item3.jpg" alt="Непотопляемая селфи-палка">
+                <a class="product-link" href="">
+                  Непотопляемая селфи-палка<span class="product-price">2 500 руб.</span>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Селфи-палка «Следуй за мной»</h3>
+                <img src="img/products-item4.jpg" alt="Селфи-палка «Следуй за мной»">
+                <a class="product-link" href="">
+                  Селфи-палка «Следуй за мной»<span class="product-price">4 900 руб.</span>
+                </a>
+              </article>
+            </li>
           </ul>
-          <ul class="sorting-order">
-            <li><a class="sorting-order-attr" href="">По возрастанию</a></li>
-            <li><a class="sorting-order-attr selected-sorting-order" href="">По убыванию</a></li>
-          </ul>
-        </header>
-        <ul class="products-list">
-          <li>
-            <article>
-              <h3>Любительская селфи-палка</h3>
-              <img src="img/products-item1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              <a class="product-link" href="">Любительская селфи-палка<span class="product-price">500 руб.</span></a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Профессиональная селфи-палка</h3>
-              <img src="img/products-item2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              <a class="product-link" href="">
-                Профессиональная селфи-палка<span class="product-price">1 500 руб.</span>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Непотопляемая селфи-палка</h3>
-              <img src="img/products-item3.jpg" alt="Непотопляемая селфи-палка">
-              <a class="product-link" href="">
-                Непотопляемая селфи-палка<span class="product-price">2 500 руб.</span>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Селфи-палка «Следуй за мной»</h3>
-              <img src="img/products-item4.jpg" alt="Селфи-палка «Следуй за мной»">
-              <a class="product-link" href="">
-                Селфи-палка «Следуй за мной»<span class="product-price">4 900 руб.</span>
-              </a>
-            </article>
-          </li>
-        </ul>
-        <footer class="products-footer">
-          <ul class="pagination">
-            <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Назад</a></li>
-            <li><a class="pagination-link selected-pagination">1</a></li>
-            <li><a class="pagination-link" href="">2</a></li>
-            <li><a class="pagination-link" href="">3</a></li>
-            <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Вперед</a></li>
-          </ul>
-        </footer>
-      </section>
+          <footer class="products-footer">
+            <ul class="pagination">
+              <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Назад</a></li>
+              <li><a class="pagination-link selected-pagination">1</a></li>
+              <li><a class="pagination-link" href="">2</a></li>
+              <li><a class="pagination-link" href="">3</a></li>
+              <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Вперед</a></li>
+            </ul>
+          </footer>
+        </section>
+      </div>
     </main>
     <footer class="footer">
       <a href="./index.html"><img src="./img/logo.svg" width="163" height="35" alt="Лого онлайн магазина «Device»"></a>
