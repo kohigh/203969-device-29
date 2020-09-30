@@ -109,37 +109,53 @@
       </div>
     </main>
     <footer class="footer">
-      <a href="./index.html"><img src="./img/logo.svg" width="163" height="35" alt="Лого онлайн магазина «Device»"></a>
-      <ul class="user-routes">
-        <li><a class="user-routes-link darkmode-link" href="">Валентин Петухов</a></li>
-        <li><a class="user-routes-link darkmode-link" href="">Выйти</a></li>
-        <li><a class="user-routes-link darkmode-link" href="">Сравнить</a></li>
-        <li><a class="user-routes-link darkmode-link" href="">Корзина</a></li>
-      </ul>
-      <section class="address">
-        <h2>Наш адрес</h2>
-        <address>г. Москва, ул. Строителей, 15</address>
-        <a class="address-tel" href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
-      </section>
-      <ul class="site-routes">
-        <li><a class="site-routes-link" href="">Доставка</a></li>
-        <li><a class="site-routes-link" href="">Гарантия</a></li>
-        <li><a class="site-routes-link" href="">Контакты</a></li>
-      </ul>
-      <section class="social">
-        <h2>Наши контакты</h2>
-        <ul class="social-list">
-          <li><a href="">Фейсбук <img src="img/social-facebook.svg" width="32" height="32" alt="Наш Фейсбук"></a></li>
-          <li><a href="">Инстаграм <img src="img/social-instagram.svg" width="32" height="32" alt="Наш Инстаграм"></a></li>
-          <li><a href="">Твиттер <img src="img/social-twitter.svg" width="32" height="32" alt="Наш Твиттер"></a></li>
+      <div class="footer_wrapper container">
+        <a class="footer-logo logo" href="index.html"><img src="./img/logo.svg" width="163" height="35" alt="Лого онлайн магазина «Device»"></a>
+        <ul class="footer-user-routes user-routes">
+          <li class="footer-user-route-logged"><a class="user-routes-link darkmode-link" href="">Валентин Петухов</a></li>
+          <li class="footer-user-route-exit"><a class="user-routes-link darkmode-link" href="">Выйти</a></li>
+          <li class="footer-user-route-compare"><a class="user-routes-link darkmode-link" href="">Сравнить</a></li>
+          <li class="footer-user-route-cart"><a class="user-routes-link darkmode-link" href="">Корзина</a></li>
         </ul>
-      </section>
-      <p>
-        Разработано
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого студии разработки «HTML Academy»">
-        </a>
-      </p>
+        <address class="footer-address-phys address-phys" >г. Москва, ул. Строителей, 15</address>
+        <a class="footer-address-tel address-tel" href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
+        <div class="footer-site-routes-wrapper">
+          <ul class="footer-site-routes site-routes">
+            <li><a class="site-routes-link" href="">Доставка</a></li>
+            <li><a class="site-routes-link" href="">Гарантия</a></li>
+            <li><a class="site-routes-link" href="">Контакты</a></li>
+          </ul>
+        </div>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <ul class="social social-list">
+            <li>
+              <a href="">
+                <span class="visually-hidden">Фейсбук</span>
+                <img src="img/social-facebook.svg" width="32" height="32" alt="Наш Фейсбук">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="visually-hidden">Инстаграм</span>
+                <img src="img/social-instagram.svg" width="32" height="32" alt="Наш Инстаграм">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span class="visually-hidden">Твиттер</span>
+                <img src="img/social-twitter.svg" width="32" height="32" alt="Наш Твиттер">
+              </a>
+            </li>
+          </ul>
+        </section>
+        <p class="footer-copyright copyright">
+          <span class="visually-hidden">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Лого студии разработки «HTML Academy»">
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
