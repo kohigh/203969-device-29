@@ -176,12 +176,12 @@ img {
   margin-right: 213px;
 }
 
-.main-nav-route-logged {
+.main-nav-user-logged {
   padding-left: 11px;
   margin-right: 20px;
 }
 
-.main-nav-route-exit {
+.main-nav-user-exit {
   margin-right: 61px;
 }
 
@@ -224,6 +224,7 @@ img {
 
 .site-routes {
   list-style: none;
+  letter-spacing: 2px;
   margin: 0;
   padding: 0;
 }
@@ -231,7 +232,6 @@ img {
 .main-nav-site-routes {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
 }
 
 .main-nav-site-catalog {
@@ -239,11 +239,16 @@ img {
 }
 
 .main-nav-site-delivery {
+  margin-left: 50px;
   margin-right: 38px;
 }
 
 .main-nav-site-warranty {
   margin-right: 111px;
+}
+
+.main-nav-site-contacts{
+  margin-left: auto;
 }
 
 .site-routes-link {
