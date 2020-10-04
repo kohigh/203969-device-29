@@ -430,7 +430,8 @@ img {
 }
 
 .advantages-nav {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages-tags {
@@ -445,6 +446,10 @@ img {
   text-transform: uppercase;
   color: var(--black-basic);
   line-height: 22px;
+}
+
+.advantages-nav-item:not(:first-child) {
+ margin-top: 40px;
 }
 
 .advantages-descriptions {
