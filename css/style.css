@@ -276,11 +276,13 @@ img {
 }
 
 .catalog-breadcrumbs {
-  display: grid;
-  grid-template-columns: repeat(3, max-content);
-  grid-gap: 40px;
+  display: flex;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.breadcrumbs-item:not(:first-child) {
+  margin-left: 40px;
 }
 
 .breadcrumbs-link {
