@@ -13,27 +13,17 @@
           <img src="img/logo-dark.svg" width="163" height="35" alt="Лого онлайн магазина «Device»">
         </a>
         <ul class="main-nav-user-routes user-routes">
-          <li class="main-nav-route-item main-nav-route-search">
-            <a class="user-routes-link" href="">Поиск по сайту</a>
-          </li>
-          <li class="main-nav-route-item main-nav-route-logged">
-            <a class="user-routes-link" href="">Валентин Петухов</a>
-          </li>
-          <li class="main-nav-route-item main-nav-route-exit">
-            <a class="user-routes-link transparent-link" href="">Выйти</a>
-          </li>
-          <li class="main-nav-route-item main-nav-route-compare">
-            <a class="user-routes-link" href="">Сравнить</a>
-          </li>
-          <li class="main-nav-route-item main-nav-route-cart">
-            <a class="user-routes-link" href="">Корзина</a>
-          </li>
+          <li class="main-nav-user-search"><a class="user-routes-link" href="">Поиск по сайту</a></li>
+          <li class="main-nav-user-logged"><a class="user-routes-link" href="">Валентин Петухов</a></li>
+          <li class="main-nav-user-exit"><a class="user-routes-link" href="">Выйти</a></li>
+          <li class="main-nav-user-compare"><a class="user-routes-link" href="">Сравнить</a></li>
+          <li class="main-nav-user-cart"><a class="user-routes-link" href="">Корзина</a></li>
         </ul>
         <ul class="main-nav-site-routes site-routes">
-          <li><a class="site-routes-link" href="./catalog.html">Каталог товаров</a></li>
-          <li><a class="site-routes-link" href="">Доставка</a></li>
-          <li><a class="site-routes-link" href="">Гарантия</a></li>
-          <li><a class="site-routes-link" href="">Контакты</a></li>
+          <li class="main-nav-site-catalog"><a class="site-routes-link">Каталог товаров</a></li>
+          <li class="main-nav-site-delivery"><a class="site-routes-link" href="">Доставка</a></li>
+          <li class="main-nav-site-warranty"><a class="site-routes-link" href="">Гарантия</a></li>
+          <li class="main-nav-site-contacts"><a class="site-routes-link" href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -42,9 +32,9 @@
       <header class="container catalog-header">
         <h2 class="section-title">Моноподы для селфи</h2>
         <ul class="catalog-breadcrumbs breadcrumbs">
-          <li><a class="breadcrumbs-link" href="index.html">Главная</a></li>
-          <li><a class="breadcrumbs-link" href="">Каталог товаров</a></li>
-          <li><a class="breadcrumbs-link">Моноподы для селфи</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="">Каталог товаров</a></li>
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link">Моноподы для селфи</a></li>
         </ul>
       </header>
       <div class="container catalog-content">
@@ -52,18 +42,20 @@
           <header class="filters-header">
             <h2 class="section-title-uppercase">Фильтр:</h2>
           </header>
-          <form class="catalog-filters-form">
-            <label for="fname">Стоимость</label><br>
-          </form>
+          <div class="catalog-filters-form-wrapper">
+            <form class="catalog-filters-form">
+              <label for="fname">Стоимость</label><br>
+            </form>
+          </div>
         </aside>
         <section class="products">
           <h2 class="visually-hidden">Товары</h2>
           <header class="products-header">
             <h3 class="section-title-uppercase">Сортировка:</h3>
             <ul class="catalog-sorting sorting">
-              <li><a class="sorting-attr selected-sorting" href="">По цене</a></li>
-              <li><a class="sorting-attr" href="">По типу</a></li>
-              <li><a class="sorting-attr" href="">По популярности</a></li>
+              <li class="catalog-sorting-item"><a class="sorting-attr selected-sorting" href="">По цене</a></li>
+              <li class="catalog-sorting-item"><a class="sorting-attr" href="">По типу</a></li>
+              <li class="catalog-sorting-item"><a class="sorting-attr" href="">По популярности</a></li>
             </ul>
             <ul class="catalog-sorting-order sorting-order">
               <li><a class="sorting-order-attr" href="">По возрастанию</a></li>
@@ -71,37 +63,37 @@
             </ul>
           </header>
           <ul class="catalog-products-list products-list">
-            <li>
-              <article>
+            <li class="catalog-product-item">
+              <article class="catalog-product">
                 <h3 class="visually-hidden">Любительская селфи-палка</h3>
                 <img src="img/products-item1.jpg" width="360" height="380" alt="Любительская селфи-палка">
                 <a class="product-link" href="">Любительская селфи-палка<span class="product-price">500 руб.</span></a>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="catalog-product-item">
+              <article class="catalog-product">
                 <h3 class="visually-hidden">Профессиональная селфи-палка</h3>
                 <img src="img/products-item2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
                 <a class="product-link" href="">
-                  Профессиональная селфи-палка<span class="product-price">1 500 руб.</span>
+                  Профессиональная<br>селфи-палка<span class="product-price">1 500 руб.</span>
                 </a>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="catalog-product-item">
+              <article class="catalog-product">
                 <h3 class="visually-hidden">Непотопляемая селфи-палка</h3>
                 <img src="img/products-item3.jpg" alt="Непотопляемая селфи-палка">
                 <a class="product-link" href="">
-                  Непотопляемая селфи-палка<span class="product-price">2 500 руб.</span>
+                  Непотопляемая<br>селфи-палка<span class="product-price">2 500 руб.</span>
                 </a>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="catalog-product-item">
+              <article class="catalog-product">
                 <h3 class="visually-hidden">Селфи-палка «Следуй за мной»</h3>
                 <img src="img/products-item4.jpg" alt="Селфи-палка «Следуй за мной»">
                 <a class="product-link" href="">
-                  Селфи-палка «Следуй за мной»<span class="product-price">4 900 руб.</span>
+                  Селфи-палка «Следуй за<br>мной»<span class="product-price">4 900 руб.</span>
                 </a>
               </article>
             </li>
