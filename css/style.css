@@ -779,20 +779,22 @@ img {
 /* Filters End */
 
 /*Catalog Form Begin*/
-.catalog-filters-form {
+.catalog-filters-form-wrapper {
+  position: relative;
   background-color: var(--gray-light);
-  padding-left: 60px;
-  padding-top: 70px;
 }
 
-.catalog-filters-form::before {
+.catalog-filters-form-wrapper::before {
   content: "";
   position: absolute;
-  top: 497px;
-  left: 0;
-  height: 1214px;
+  left: -50vw;
+  height: 100%;
   width: 50vw;
-  background-color: var(--gray-light);
-  z-index: -2;
+  background-color: inherit;
+}
+
+.catalog-filters-form {
+  padding-left: 60px;
+  padding-top: 70px;
 }
 /*Catalog Form End*/
