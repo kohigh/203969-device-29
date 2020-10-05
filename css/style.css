@@ -653,14 +653,27 @@ img {
 }
 
 .catalog-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 72px;
+  margin-top: 69px;
+}
+
+.catalog-product-item {
+  margin-bottom: 48px;
+}
+
+.catalog-product-item:not(:nth-child(2n)) {
+  margin-right: 40px;
+}
+
+.catalog-product {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-  padding-left: 72px;
-  padding-top: 69px;
+  row-gap: 30px;
 }
 
 .product-link {
+  display: flex;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   color: var(--black-basic);
   font-size: 18px;
@@ -671,6 +684,7 @@ img {
   font-family: "Gilroy Light", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+  margin-left: auto;
 }
 
 .products-footer {
