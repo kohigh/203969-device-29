@@ -685,6 +685,7 @@ img {
 .advantages {
   min-height: 288px;
   background-color: var(--gray-light);
+  margin-bottom: 110px;
 }
 
 .advantages_wrapper {
@@ -788,6 +789,15 @@ img {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.partners-list img {
+  filter: grayscale(100%);
+}
+
+.partners-nav li:hover img,
+.partners-nav li:focus img {
+  filter: none;
 }
 
 .partners-list {
