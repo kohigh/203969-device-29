@@ -122,6 +122,17 @@ img {
 .index-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  min-height: 523px;
+  margin-bottom: 85px;
+}
+
+.index-columns p {
+  margin: 0;
+  padding: 0;
+}
+
+.index-columns .button {
+  margin-top: auto;
 }
 
 .section-title {
@@ -783,6 +794,7 @@ img {
 /* Partners Begin */
 .partners {
   min-height: 100px;
+  margin-bottom: 140px;
 }
 
 .partners-nav {
@@ -809,22 +821,50 @@ img {
 
 /* About Us Begin */
 .about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-container {
   display: grid;
+  row-gap: 40px;
+}
+
+.contact-us-container {
+  display: grid;
+  row-gap: 21px;
+}
+
+.about-us .section-title {
+  line-height: 57px;
+  letter-spacing: 9.5px;
 }
 
 .delivery-providers {
   margin: 0;
   padding: 0;
+  margin-top: 20px;
+  margin-left: 32px;
   list-style: none;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 28px;
+}
+
+.delivery-providers li {
+  margin-bottom: 14.5px;
 }
 /* About Us End */
 
 /* Contacts Begin */
 .contacts {
   display: grid;
+  margin-left: 20px;
+}
+
+.contacts .section-title {
+  letter-spacing: 9.4px;
+  line-height: 56px;
 }
 /* Contactts End */
 
