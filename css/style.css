@@ -58,6 +58,9 @@
   --header-white-gradient: 20px;
   --header-yellow-gradient: 300px;
   --header-full-height: var(--header-white-gradient) + var(--header-yellow-gradient);
+
+  --categories-min-width: 160px;
+  --categories-link-padding: 38px;
 }
 
 /* Global Begin */
@@ -458,6 +461,7 @@ img {
 /* Recommended Begin */
 .recommended {
   margin-top: -129px;
+  margin-bottom: 109px;
 }
 
 .recommended-list {
@@ -551,8 +555,10 @@ img {
 /* Recommended End */
 
 /* Categories Begin */
-.categories {
-  min-height: 282px;
+.categories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .categories-routes {
@@ -561,18 +567,114 @@ img {
   justify-content: space-between;
 }
 
-.categories-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.categories-route {
+  width: var(--categories-min-width);
 }
 
-.categories-list-link {
-  background-color: var(--yellow-light);
+.category-title {
+  padding: 0;
+  margin: 0;
+}
+
+.categories-link {
+  display: block;
+  position: relative;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 18px;
   color: var(--black-basic);
   line-height: 22px;
+  letter-spacing: 0.9px;
+  margin-top: 2px;
+  padding-top: calc(var(--categories-min-width) + var(--categories-link-padding));
+}
+
+.categories-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: var(--categories-min-width);
+  height: var(--categories-min-width);
+  background-color: var(--yellow-light);
+}
+
+.categories-vr::after {
+  content: "";
+  position: absolute;
+  width: 97px;
+  height: 55px;
+  bottom: 135px;
+  left: 31px;
+  background-image: url("../img/categories-vr.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.categories-vr .category-title {
+  margin-left: 1px;
+}
+
+.categories-monopods::after {
+  content: "";
+  position: absolute;
+  width: 86px;
+  height: 117px;
+  bottom: 99px;
+  left: 37px;
+  background-image: url("../img/categories-monopods.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.categories-actioncams::after {
+  content: "";
+  position: absolute;
+  width: 71px;
+  height: 87px;
+  bottom: 97px;
+  left: 44px;
+  background-image: url("../img/categories-actioncams.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.categories-route:nth-child(4) .categories-link {
+  letter-spacing: 0px;
+}
+
+.categories-fitnesstrackers::after {
+  content: "";
+  position: absolute;
+  width: 107px;
+  height: 65px;
+  bottom: 107px;
+  left: 27px;
+  background-image: url("../img/categories-fitnesstrackers.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.categories-smartwatches::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 98px;
+  bottom: 91px;
+  left: 52px;
+  background-image: url("../img/categories-smartwatches.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.categories-quadcopters::after {
+  content: "";
+  position: absolute;
+  width: 132px;
+  height: 69px;
+  bottom: 105px;
+  left: 14px;
+  background-image: url("../img/categories-quadcopters.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 /* Categories End */
 
