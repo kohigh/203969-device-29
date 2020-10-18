@@ -133,6 +133,9 @@ img {
 
 .index-columns .button {
   margin-top: auto;
+  width: 264.5px;
+  line-height: 23px;
+  text-align: center;
 }
 
 .section-title {
@@ -827,12 +830,32 @@ img {
 
 .about-us-container {
   display: grid;
+  position: relative;
   row-gap: 40px;
+}
+
+.about-us-container::before {
+  content: "";
+  position: absolute;
+  top: -58px;
+  width: 80px;
+  height: 7px;
+  background-color: var(--black-basic);
 }
 
 .contact-us-container {
   display: grid;
+  position: relative;
   row-gap: 21px;
+}
+
+.contact-us-container::before {
+  content: "";
+  position: absolute;
+  top: -58px;
+  width: 80px;
+  height: 7px;
+  background-color: var(--black-basic);
 }
 
 .about-us .section-title {
@@ -864,7 +887,7 @@ img {
 
 .contacts .section-title {
   letter-spacing: 9.4px;
-  line-height: 56px;
+  line-height: 57px;
 }
 /* Contactts End */
 
