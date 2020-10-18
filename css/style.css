@@ -481,6 +481,50 @@ img {
 /**/
 
 /* Recommended Begin */
+.slider {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
+.slider-controls {
+  display: flex;
+  width: 72px;
+  justify-content: space-between;
+  position: absolute;
+  right: 88px;
+  bottom: 142px;
+}
+
+.slider-controls button {
+  position: relative;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--black-basic);
+}
+
+.slider-controls .current::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--black-basic);
+}
+
 .recommended {
   margin-top: -129px;
   margin-bottom: 109px;
