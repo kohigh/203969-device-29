@@ -59,6 +59,9 @@
   --header-yellow-gradient: 300px;
   --header-full-height: var(--header-white-gradient) + var(--header-yellow-gradient);
 
+  --recommended-img-height: 500px;
+  --recommended-img-width: 526px;
+
   --categories-min-width: 160px;
   --categories-link-padding: 38px;
 
@@ -159,12 +162,25 @@ img {
 }
 
 .button {
+  position: relative;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   color: var(--black-basic);
   font-size: 18px;
   line-height: 22px;
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing);
+  z-index: 0;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  background-color: var(--yellow-basic);
+  width: 260px;
+  height: 8px;
+  z-index: -1;
 }
 /* Global End */
 
@@ -194,8 +210,19 @@ img {
 
 .main-nav-visible-wrapper {
   display: grid;
+  position: relative;
   grid-template-rows: min-content min-content 1fr;
   min-height: var(--header-visible-height);
+}
+
+.main-nav-visible-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  right: 400px;
+  width: 100px;
+  height: 7px;
+  background-color: var(--white-basic)
 }
 
 .user-routes {
@@ -371,7 +398,7 @@ img {
 
 .main-nav-site-contacts{
   margin-left: auto;
-  margin-right: -3px;
+  margin-right: -3.5px;
 }
 
 .site-routes-link {
@@ -487,6 +514,47 @@ img {
 
 .slide {
   display: none;
+  position: relative;
+}
+
+.slide::before {
+  position: absolute;
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+  top: -17px;
+  right: 47px;
+  width: 182px;
+  height: 170px;
+  color: var(--white-basic);
+}
+
+.slide:first-child img {
+  margin-left: 59px;
+}
+
+.slide:first-child::before {
+  content: "01";
+}
+
+.slide:nth-child(2)::before {
+  content: "02";
+  margin-right: 30px;
+}
+
+.slide:nth-child(2) img {
+  margin-top: 26px;
+  margin-left: 86px;
+}
+
+.slide:nth-child(3) img {
+  margin-top: 82px;
+}
+
+.slide:nth-child(3)::before {
+  content: "03";
+  margin-right: 30px;
 }
 
 .slide-current {
@@ -499,11 +567,12 @@ img {
   justify-content: space-between;
   position: absolute;
   right: 88px;
-  bottom: 142px;
+  bottom: 148px;
 }
 
 .slider-controls button {
   position: relative;
+  cursor: pointer;
   padding: 0;
   width: 12px;
   height: 12px;
@@ -527,7 +596,11 @@ img {
 
 .recommended {
   margin-top: -129px;
-  margin-bottom: 109px;
+  margin-bottom: 103px;
+}
+
+.recommended .button::before {
+  width: 220px;
 }
 
 .recommended-list {
@@ -543,8 +616,15 @@ img {
 
 .recommended-product-img {
   margin: 0;
-  margin-left: 89px;
+  margin-left: 30px;
   padding: 0;
+  height: var(--recommended-img-height);
+  width: var(--recommended-img-width);
+}
+
+.recommended-product-img a,
+.recommended-product-img img {
+  display: block;
 }
 
 .recommended-product-about {
@@ -558,6 +638,7 @@ img {
   margin: 0px;
   margin-top: 93px;
   padding: 0px;
+  z-index: 1;
 }
 
 .recommended-product-description {
@@ -572,51 +653,38 @@ img {
 }
 
 .recommended-product-table {
-  display: grid;
   margin-top: 34px;
   border-spacing: 0;
 }
 
-.recommended-table-attrs {
-  order: 1;
-  margin-top: 15px;
+.product-attrs {
+  display: table-footer-group;
   letter-spacing: 1.3px;
 }
 
-.recommended-attr {
-  margin: 0;
-  padding: 0;
-  padding-right: 65px;
-}
-
-.recommended-attr:nth-child(2) {
-  padding-right: 63px;
-}
-
-.recommended-value {
-  padding: 0;
-  margin: 0;
-  padding-right: 61px;
-}
-
-.recommended-value:nth-child(2) {
-  padding-right: 62px;
-}
-
 .product-values {
+  display: table-header-group;
   letter-spacing: var(--letter-spacing);
+  margin-bottom: 15px;
 }
 
 .recommended-attr {
   font-family: "Gilroy Light", "Arial", sans-serif;
   font-size: 13px;
   line-height: 15px;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+  padding-right: 63px;
 }
 
 .recommended-value {
   font-family: "Gilroy Light", "Arial", sans-serif;
   font-size: 36px;
   line-height: 42px;
+  padding: 0;
+  margin: 0;
+  padding-right: 61px;
 }
 /* Recommended End */
 
@@ -751,6 +819,15 @@ img {
   margin-bottom: 110px;
 }
 
+.advantages-nav-item .button::before {
+  width: 160px;
+  left: -20px;
+}
+
+.advantage-nav-current .button::before {
+  display: none;
+}
+
 .advantages_wrapper {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -767,11 +844,20 @@ img {
   display: flex;
   min-width: var(--advantages-tags-text-width);
   flex-direction: column;
-  margin-right: 114px;
 }
 
 .advantages-nav-item {
   text-align: center;
+  padding-right: 133px;
+  padding-left: 19.5px;
+  padding-top: 9.3px;
+  padding-bottom: 8.9px;
+  color: var(--black-basic)
+}
+
+.advantage-nav-current {
+  background-color: var(--black-basic);
+  color: var(--yellow-light);
 }
 
 .advantages-tag {
@@ -779,16 +865,12 @@ img {
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  color: var(--black-basic);
+  color: inherit;
   line-height: 22px;
 }
 
-.advantages-nav-item:first-child {
-  margin-top: 8px;
-}
-
 .advantages-nav-item:not(:first-child) {
-  margin-top: 40px;
+  margin-top: 21px;
 }
 
 .advantages-definitions {
@@ -809,11 +891,21 @@ img {
   background-color: var(--black-basic);
 }
 
-.advantages-definitions li {
-  position: relative;
+.advantage-nav-current:nth-child(3) {
+  padding-bottom: 8px;
+  margin-top: 22px;
 }
 
-.advantages-delivery::after {
+.advantages-definition {
+  position: relative;
+  display: none;
+}
+
+.advantage-current {
+  display: block;
+}
+
+.advantages-definition:first-child::after {
   content: "";
   position: absolute;
   right: 2px;
@@ -821,6 +913,30 @@ img {
   width: 136px;
   height: 164px;
   background-image: url("../img/advantages-delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages-definition:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  right: -16px;
+  top: -27px;
+  width: 171px;
+  height: 195px;
+  background-image: url("../img/advantages-warranty.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantages-definition:last-child::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  top: -32px;
+  width: 156px;
+  height: 188px;
+  background-image: url("../img/advantages-credit.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -912,6 +1028,10 @@ img {
   letter-spacing: 9.5px;
 }
 
+.about-us .button {
+  padding-left: 1px;
+}
+
 .delivery-providers {
   margin: 0;
   padding: 0;
@@ -923,8 +1043,21 @@ img {
   line-height: 28px;
 }
 
-.delivery-providers li {
+.delivery-provider {
+  position: relative;
   margin-bottom: 14.5px;
+}
+
+.delivery-provider::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px solid var(--gray-light);
+  border-radius: 50%;
 }
 /* About Us End */
 
@@ -937,6 +1070,14 @@ img {
 .contacts .section-title {
   letter-spacing: 9.4px;
   line-height: 57px;
+}
+
+.contacts .button {
+  margin-left: -1px;
+}
+
+.contacts .button::before {
+  left: 1px;
 }
 /* Contactts End */
 
