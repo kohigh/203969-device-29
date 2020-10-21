@@ -13,12 +13,18 @@
           <a class="logo">
             <img src="img/logo-dark.svg" width="163" height="35" alt="Лого онлайн магазина «Device»">
           </a>
-          <ul class="main-nav-user-routes user-routes">
-            <li class="main-nav-user-search"><a class="user-routes-link" href="">Поиск по сайту</a></li>
-            <li class="main-nav-user-login"><a class="user-routes-link" href="">Войти</a></li>
-            <li class="main-nav-user-compare"><a class="user-routes-link" href="">Сравнить</a></li>
-            <li class="main-nav-user-cart"><a class="user-routes-link" href="">Корзина</a></li>
-          </ul>
+          <div class="user-nav-wrapper">
+            <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+              <label class="search-label" for="search"></label>
+              <input id="search" class="search-form-input" type="text" name="search-title" placeholder="Поиск по сайту"></input>
+              <input class="search-form-submit" type="submit" value="Найти">
+            </form>
+            <ul class="main-nav-user-routes user-routes">
+              <li class="main-nav-user-login"><a class="user-routes-link" href="">Войти</a></li>
+              <li class="main-nav-user-compare"><a class="user-routes-link" href="">Сравнить</a></li>
+              <li class="main-nav-user-cart"><a class="user-routes-link" href="">Корзина</a></li>
+            </ul>
+          </div>
           <ul class="main-nav-site-routes site-routes">
             <li class="main-nav-site-catalog"><a class="site-routes-link" href="./catalog.html">Каталог товаров</a></li>
             <li class="main-nav-site-delivery"><a class="site-routes-link" href="">Доставка</a></li>
@@ -280,7 +286,7 @@
             <li>
               <a href="">
                 <span class="visually-hidden">Фейсбук</span>
-                <img src="img/social-facebook.svg" width="32" height="32" alt="Наш Фейсбук">
+                <img class="social-icon" src="img/social-facebook.svg" width="32" height="32" alt="Наш Фейсбук">
               </a>
             </li>
             <li>
