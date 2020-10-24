@@ -1681,6 +1681,13 @@ img {
 
 .catalog-filters-form {
   padding-left: 60px;
-  padding-top: 70px;
+  padding-top: 79px;
+}
+
+.catalog-filters-form label {
+  font-family: "Gilroy Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
 }
 /*Catalog Form End*/
