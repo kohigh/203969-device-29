@@ -179,6 +179,7 @@ img {
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
 }
 
@@ -215,8 +216,9 @@ img {
 }
 /* Global End */
 
-.catalog-header {
+.catalog-main-header {
   margin-top: 44px;
+  margin-bottom: 50px;
   padding: 0 60px;
 }
 
@@ -643,23 +645,23 @@ img {
 }
 
 .catalog-sorting {
-  margin-left: 74px;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 73px;
+  margin-bottom: 2px;
 }
 
 .catalog-sorting-item {
-  margin-right: 30px;
+  margin-right: 31px;
 }
 
 .catalog-sorting-order {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-gap: 23px;
+  display: flex;
+  margin-top: 5px;
 }
 
 .sorting-attr {
-  font-size: 14px;
+  font-size: 14.3px;
   line-height: 19px;
   color: var(--black-basic);
   opacity: 0.3;
@@ -672,6 +674,7 @@ img {
 .sorting-order-attr {
   color: var(--black-basic);
   opacity: 0.2;
+  margin-left: 17px;
 }
 
 .sorting-order-attr:hover {
@@ -1008,8 +1011,10 @@ img {
 /* Advantages Begin */
 .advantages {
   min-height: 288px;
-  background-color: var(--gray-light);
-  margin-bottom: 110px;
+  background-image: linear-gradient(
+    var(--white-basic) var(--header-white-gradient),
+    var(--gray-light) var(--header-white-gradient));
+  margin-bottom: 90px;
 }
 
 .advantages-nav-item .button::before {
@@ -1025,6 +1030,7 @@ img {
   display: grid;
   grid-template-columns: min-content 1fr;
   margin-top: 164px;
+  padding-bottom: 129px;
 }
 
 .advantages-tags {
@@ -1322,11 +1328,24 @@ img {
 }
 
 .footer-user-route-logged {
-  grid-column: 1 / 2;
+  padding-left: 13px;
+  margin-right: 24px;
+}
+
+.footer-user-route-logged .user-routes-link::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -26px;
+  width: 13px;
+  height: 14px;
+  background-image: url("../img/icon-user-yellow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .footer-user-route-exit {
-  grid-column: 2 / 3;
+  margin-right: 53px;
 }
 
 .footer-user-route-login .user-routes-link {
@@ -1489,6 +1508,10 @@ img {
   background-color: var(--gray-light);
 }
 
+.products-header .section-title-uppercase {
+  /*margin-top: 13px;*/
+}
+
 .products-list {
   margin: 0;
   padding: 0;
@@ -1499,10 +1522,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: 72px;
-  margin-top: 69px;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 
-.catalog-product-item {
+.catalog-product-item:not(:last-child):not(:nth-last-child(2)) {
   margin-bottom: 48px;
 }
 
@@ -1517,23 +1541,24 @@ img {
 
 .product-link {
   display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   color: var(--black-basic);
   font-size: 18px;
   line-height: 22px;
+  letter-spacing: 0.9px;
 }
 
 .product-price {
   font-family: "Gilroy Light", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
-  margin-left: auto;
+  line-height: 18.45px;
 }
 
 .products-footer {
   background-color: var(--gray-lightest);
   margin-left: 72px;
-  margin-top: 40px;
   margin-bottom: 78px;
 }
 /* Products End*/
@@ -1546,15 +1571,36 @@ img {
 }
 
 .catalog-pagination {
-  width: 100%;
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr repeat(3, min-content) 1fr;
+}
+
+.pagination-numbers {
+  display: flex;
+  padding-left: 35px;
+}
+
+.pagination-number {
+  margin-right: 30px;
 }
 
 .pagination-prev-next {
   height: 70px;
-  padding: 25px 30px;
+  padding: 20px 30px;
+  letter-spacing: 1.9px;
+}
+
+.pagination-prev-next:first-child {
+  margin-right: auto;
+}
+
+.pagination-prev-next:first-child + li {
+  margin: 0 auto;
+}
+
+.pagination-prev-next:last-child {
+  margin-left: auto;
+  padding-right: 28px;
 }
 
 .pagination-prev-next:hover,
@@ -1569,14 +1615,6 @@ img {
   color: var(--black-basic);
   opacity: 0.3;
   text-transform: uppercase;
-}
-
-.pagination-prev-next:first-child {
-  margin-right: 247px;
-}
-
-.pagination-prev-next:last-child {
-  margin-left: 252px;
 }
 
 .pagination-link:hover {
@@ -1604,20 +1642,25 @@ img {
 }
 
 .filters-header {
+  position: relative;
   background-color: var(--gray-darkest);
   min-height: 70px;
   padding: 0 60px;
-  padding-right: 193px;
+  padding-right: 191px;
 }
 
 .filters-header::before {
   content: "";
   position: absolute;
-  left: 0;
-  height: 70px;
+  left: -50vw;
   width: 50vw;
+  height: 70px;
   background-color: var(--gray-darkest);
   z-index: -1;
+}
+
+.filters-header .section-title-uppercase {
+  margin-top: 25px;
 }
 /* Filters End */
 

@@ -59,7 +59,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Каталог товаров</h1>
-      <header class="container catalog-header">
+      <header class="container catalog-main-header">
         <h2 class="section-title">Моноподы для селфи</h2>
         <ul class="catalog-breadcrumbs breadcrumbs">
           <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
@@ -88,8 +88,18 @@
               <li class="catalog-sorting-item"><a class="sorting-attr" href="">По популярности</a></li>
             </ul>
             <ul class="catalog-sorting-order sorting-order">
-              <li><a class="sorting-order-attr" href="">По возрастанию</a></li>
-              <li><a class="sorting-order-attr selected-sorting-order" href="">По убыванию</a></li>
+              <li>
+                <a class="sorting-order-attr" href="">
+                  <span class="visually-hidden">По возрастанию</span>
+                  <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".2" d="M3 14h11L8.5 4 3 14z" fill="#000"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="sorting-order-attr selected-sorting-order" href="">
+                  <span class="visually-hidden">По убыванию</span>
+                  <svg width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 4H3l5.5 10L14 4z" fill="#000"/></svg>
+                </a>
+              </li>
             </ul>
           </header>
           <ul class="catalog-products-list products-list">
@@ -97,7 +107,7 @@
               <article class="catalog-product">
                 <h3 class="visually-hidden">Любительская селфи-палка</h3>
                 <img src="img/products-item1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                <a class="product-link" href="">Любительская селфи-палка<span class="product-price">500 руб.</span></a>
+                <a class="product-link" href="">Любительская селфи-палка<span class="product-price">1 100 руб.</span></a>
               </article>
             </li>
             <li class="catalog-product-item">
@@ -114,7 +124,7 @@
                 <h3 class="visually-hidden">Непотопляемая селфи-палка</h3>
                 <img src="img/products-item3.jpg" alt="Непотопляемая селфи-палка">
                 <a class="product-link" href="">
-                  Непотопляемая<br>селфи-палка<span class="product-price">2 500 руб.</span>
+                  Непотопляемая<br>селфи-палка<span class="product-price">1 500 руб.</span>
                 </a>
               </article>
             </li>
@@ -123,7 +133,7 @@
                 <h3 class="visually-hidden">Селфи-палка «Следуй за мной»</h3>
                 <img src="img/products-item4.jpg" alt="Селфи-палка «Следуй за мной»">
                 <a class="product-link" href="">
-                  Селфи-палка «Следуй за<br>мной»<span class="product-price">4 900 руб.</span>
+                  Селфи-палка «Следуй за<br>мной»<span class="product-price">1 900 руб.</span>
                 </a>
               </article>
             </li>
@@ -131,9 +141,13 @@
           <footer class="products-footer">
             <ul class="catalog-pagination pagination">
               <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Назад</a></li>
-              <li><a class="pagination-link selected-pagination">1</a></li>
-              <li><a class="pagination-link" href="">2</a></li>
-              <li><a class="pagination-link" href="">3</a></li>
+              <li>
+                <ul class="pagination-numbers pagination">
+                  <li class="pagination-number"><a class="pagination-link selected-pagination">1</a></li>
+                  <li class="pagination-number"><a class="pagination-link" href="">2</a></li>
+                  <li class="pagination-number"><a class="pagination-link" href="">3</a></li>
+                </ul>
+              </li>
               <li class="pagination-prev-next"><a class="pagination-link selected-pagination" href="">Вперед</a></li>
             </ul>
           </footer>
@@ -142,25 +156,17 @@
     </main>
     <footer class="footer">
       <div class="footer_wrapper container">
-        <a class="footer-logo logo" href="index.html">
+        <a class="footer-logo logo" href="">
           <img src="./img/logo.svg" width="163" height="35" alt="Лого онлайн магазина «Device»">
         </a>
         <ul class="footer-user-routes user-routes">
-          <li class="footer-user-route-logged">
-            <a class="user-routes-link darkmode-link" href="">Валентин Петухов</a>
-          </li>
-          <li class="footer-user-route-exit">
-            <a class="user-routes-link darkmode-link" href="">Выйти</a>
-          </li>
-          <li class="footer-user-route-compare">
-            <a class="user-routes-link darkmode-link" href="">Сравнить</a>
-          </li>
-          <li class="footer-user-route-cart">
-            <a class="user-routes-link darkmode-link" href="">Корзина</a>
-          </li>
+          <li class="footer-user-route-logged"><a class="user-routes-link darkmode-link" href="">Валентин Петухов</a></li>
+          <li class="footer-user-route-exit"><a class="user-routes-link darkmode-link" href="">Выйти</a></li>
+          <li class="footer-user-route-compare"><a class="user-routes-link darkmode-link" href="">Сравнить</a></li>
+          <li class="footer-user-route-cart"><a class="user-routes-link darkmode-link" href="">Корзина</a></li>
         </ul>
         <address class="footer-address-phys address-phys" >г. Москва, ул. Строителей, 15</address>
-        <a class="footer-address-tel address-tel" href="tel:+7(495)495-95-95">+7(495)495-95-95</a>
+        <a class="footer-address-tel address-tel" href="tel:+7(495)495-95-95">Тел.:  +7 (495) 495-95-95</a>
         <div class="footer-site-routes-wrapper">
           <ul class="footer-site-routes site-routes">
             <li><a class="site-routes-link" href="">Доставка</a></li>
@@ -174,7 +180,7 @@
             <li>
               <a href="">
                 <span class="visually-hidden">Фейсбук</span>
-                <img src="img/social-facebook.svg" width="32" height="32" alt="Наш Фейсбук">
+                <img class="social-icon" src="img/social-facebook.svg" width="32" height="32" alt="Наш Фейсбук">
               </a>
             </li>
             <li>
