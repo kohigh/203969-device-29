@@ -1708,6 +1708,10 @@ img {
   margin-bottom: 48px;
 }
 
+.filter-item:last-of-type {
+  margin-top: 51px;
+}
+
 .range-controls {
   position: relative;
   box-sizing: content-box;
@@ -1762,5 +1766,56 @@ img {
   font-size: inherit;
   background-color: inherit;
   border: none;
+}
+
+.filter-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-item label {
+  position: relative;
+  cursor: pointer;
+}
+
+.filter-checkbox {
+  margin-top: 11px;
+}
+
+.filter-checkbox:first-child {
+  margin-top: 27px;
+}
+
+.filter-input + label {
+  display: block;
+  padding-left: 42px;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 14px;
+  /*user-select: none;*/ /*TODO return & check*/
+}
+
+.filter-input-checkbox + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/checkbox-frame.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  width: 20.31px;
+  height: 21px;
+  background-image: url("../img/checkbox-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 /*Catalog Form End*/

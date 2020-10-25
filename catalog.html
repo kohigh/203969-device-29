@@ -92,9 +92,52 @@
                   </label>
                 </div>
               </fieldset>
-            <fieldset class="filter-item">
-              <legend>Цвет</legend>
-            </fieldset>
+              <fieldset class="filter-item">
+                <legend>Цвет</legend>
+                <ul>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                           type="checkbox" name="black" id="black" checked>
+                    <label for="black">Чёрный</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                           type="checkbox" name="white" id="white">
+                    <label for="white">Белый</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                           type="checkbox" name="blue" id="blue" checked>
+                    <label for="blue">Синий</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                           type="checkbox" name="red" id="red" checked>
+                    <label for="red">Красный</label>
+                  </li>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden filter-input filter-input-checkbox"
+                           type="checkbox" name="pink" id="pink">
+                    <label for="pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-item">
+                <legend>Bluetooth</legend>
+                <ul>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input filter-input-radio"
+                           type="radio" name="bluetooth" value="yes" id="yes" checked>
+                    <label for="yes">Есть</label>
+                  </li>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden filter-input filter-input-radio"
+                           type="radio" name="bluetooth" value="no" id="no">
+                    <label for="no">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit" class="filter-button button">Показать</button>
             </form>
           </div>
         </aside>
