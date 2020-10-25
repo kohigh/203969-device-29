@@ -34,6 +34,7 @@
   --black-basic: #000000;
   --black-light: #363636;
   --black-opacity03: rgba(0, 0, 0, 0.3);
+  --black-opacity02: rgba(0, 0, 0, 0.2);
 
   --gray-darkest: #DCDCDC;
   --gray-darker: #D9D9D9;
@@ -41,6 +42,7 @@
   --gray-basic: #7E7E7E;
   --gray-light: #E5E5E5;
   --gray-lightest: #EBEBEB;
+  --gray-onemore: #C4C4C4;
 
   --yellow-basic: #F0C52E;
   --yellow-light: #F7E296;
@@ -97,11 +99,8 @@
   box-sizing: inherit;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 body {
+  box-sizing: border-box;
   min-width: 1240px;
   margin: 0;
   padding: 0;
@@ -1681,13 +1680,87 @@ img {
 
 .catalog-filters-form {
   padding-left: 60px;
-  padding-top: 79px;
+  padding-top: 86px;
 }
 
-.catalog-filters-form label {
+.catalog-filters-form legend {
+  position: relative;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 1.4px;
+}
+
+.catalog-filters-form legend:before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  top: -16px;
+  background-color: var(--black-basic);
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 200px;
+  margin-bottom: 48px;
+}
+
+.range-controls {
+  position: relative;
+  box-sizing: content-box;
+  padding-top: 38px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  width: 100%;
+  background-color: var(--black-opacity02);
+}
+
+.range-controls .bar {
+  width: 62%;
+  height: 100%;
+  background-color: var(--green-basic);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 29px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid var(--white-basic);
+  border-radius: 50%;
+  background-color: var(--gray-onemore);
+  box-shadow: 0 2px 1px 0 #cfcfcf; /*TODO: refactor*/
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 114px;
+}
+
+.price-controls label {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 14px;
+}
+
+.price-controls input {
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+  width: 60px;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: inherit;
+  border: none;
 }
 /*Catalog Form End*/

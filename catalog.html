@@ -74,7 +74,27 @@
           </header>
           <div class="catalog-filters-form-wrapper">
             <form class="catalog-filters-form">
-              <label for="fname">Стоимость</label><br>
+              <fieldset class="filter-item">
+                <legend>Стоимость</legend>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label>
+                    от <input name="min-price" type="number" value="0">
+                  </label>
+                  <label>
+                    до <input name="max-price" type="number" value="5000">
+                  </label>
+                </div>
+              </fieldset>
+            <fieldset class="filter-item">
+              <legend>Цвет</legend>
+            </fieldset>
             </form>
           </div>
         </aside>
