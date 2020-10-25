@@ -1710,6 +1710,7 @@ img {
 
 .filter-item:last-of-type {
   margin-top: 51px;
+  margin-bottom: 45px;
 }
 
 .range-controls {
@@ -1853,5 +1854,19 @@ img {
   background-image: url("../img/radio-checked.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-button {
+  padding-left: 37px;
+}
+
+.catalog-filters-form .button {
+  border: none;
+  background-color: inherit;
+}
+
+.catalog-filters-form .button::before {
+  width: 200px;
+  top: 8px;
 }
 /*Catalog Form End*/
