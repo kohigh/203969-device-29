@@ -1818,4 +1818,40 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+.filter-radio {
+  margin-top: 12px;
+}
+
+.filter-radio:first-of-type {
+  margin-top: 27px;
+}
+
+.filter-input-radio + label {
+  padding-left: 40px;
+}
+
+.filter-input-radio + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/radio-frame.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background-image: url("../img/radio-checked.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 /*Catalog Form End*/
