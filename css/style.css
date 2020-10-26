@@ -184,6 +184,7 @@ img {
 
 .button {
   position: relative;
+  cursor: pointer;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   color: var(--black-basic);
   font-size: 18px;
@@ -1543,8 +1544,8 @@ img {
   position: absolute;
   width: 27px;
   height: 15px;
-  top: 46px;
-  right: 45px;
+  top: 12%;
+  right: 12.5%;
   text-transform: uppercase;
   font-family: "Gilroy Bold", "Open Sans Bold", sans-serif;
   font-size: 12px;
@@ -1584,6 +1585,48 @@ img {
   background-color: var(--gray-lightest);
   margin-left: 72px;
   margin-bottom: 78px;
+}
+
+.product-img-wrapper {
+  position: relative;
+  width: 360px;
+  height: 380px;
+}
+
+.catalog-product-item button {
+  display: none;
+}
+
+.catalog-product-item:hover button {
+  display: block;
+}
+
+.button-add-product {
+  position: absolute;
+  border: none;
+  top: 47%;
+  left: 30%;
+  background-color: transparent;
+}
+
+.catalog-product .button:before {
+  top: 7px;
+  left: -31px;
+  width: 200px;
+}
+
+.button-add-comparison {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 59%;
+  left: 26%;
+  border: none;
+  background-color: transparent;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 2.1px;
 }
 /* Products End*/
 
