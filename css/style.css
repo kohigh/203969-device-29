@@ -1535,7 +1535,32 @@ img {
 
 .catalog-product {
   display: grid;
+  position: relative;
   row-gap: 30px;
+}
+
+.product-new {
+  position: absolute;
+  width: 27px;
+  height: 15px;
+  top: 46px;
+  right: 45px;
+  text-transform: uppercase;
+  font-family: "Gilroy Bold", "Open Sans Bold", sans-serif;
+  font-size: 12px;
+  color: var(--black-opacity03);
+}
+
+.product-new::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  right: -18px;
+  width: 62px;
+  height: 62px;
+  background-color: transparent;
+  border: 2px solid var(--black-opacity03);
+  border-radius: 50%;
 }
 
 .product-link {
