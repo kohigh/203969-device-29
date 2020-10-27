@@ -1112,9 +1112,19 @@ img {
   color: var(--black-basic)
 }
 
-.advantage-nav-current {
+.advantage-nav-current,
+.advantages-nav-item:active {
   background-color: var(--black-basic);
   color: var(--yellow-light);
+}
+
+.advantages-nav-item:active .button {
+  background-color: var(--black-basic);
+  color: var(--yellow-light);
+}
+
+.advantages-nav-item:active .button:before {
+  display: none;
 }
 
 .advantages-tag {
@@ -1356,13 +1366,14 @@ img {
     "logo user-routes user-routes"
     "address-phys site-routes address-tel"
     ". social copyright";
+  padding-bottom: 41px;
 }
 
 .footer_wrapper::before {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 37px;
+  bottom: 78px;
   width: 80px;
   height: 7px;
   background-color: var(--yellow-some);
@@ -1565,7 +1576,8 @@ img {
 .products-header::after {
   content: "";
   position: absolute;
-  left: 100%;
+  top: 0;
+  right: calc(-1 * (100vw - var(--container-size)) / 2);
   height: 100%;
   width: calc((100vw - var(--container-size)) / 2);
   background-color: var(--gray-light);
@@ -1657,6 +1669,10 @@ img {
   position: relative;
   width: 360px;
   height: 380px;
+}
+
+.catalog-product-item:hover img {
+  opacity: 0.7;
 }
 
 .catalog-product-item button {
