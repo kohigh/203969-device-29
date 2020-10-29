@@ -46,6 +46,8 @@
   --gray-lightest: #EBEBEB;
   --gray-onemore: #C4C4C4;
   --gray-another: rgba(166,166,166,1);
+  --gray-anotherone: #F2F2F2;
+
 
   --yellow-basic: #F0C52E;
   --yellow-light: #F7E296;
@@ -235,7 +237,7 @@ img {
   background-image: linear-gradient(
     var(--white-basic) var(--header-white-gradient),
     var(--yellow-light) var(--header-white-gradient));
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .main-nav {
@@ -2049,3 +2051,125 @@ img {
   top: 8px;
 }
 /*Catalog Form End*/
+
+/*Modals Begin*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-contact {
+  width: 960px;
+  height: 550px;
+  font-family: "Gilroy Bold", Arial, sans-serif;
+  background-color: var(--white-basic);
+  font-size: 18px;
+}
+
+.form-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin: 0 100px;
+  margin-top: 89px;
+}
+
+.form-contact p {
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.form-contact input {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 21px;
+  letter-spacing: 0.3px;
+  background-color: var(--gray-anotherone);
+  border: none;
+}
+
+.form-contact input::placeholder,
+.form-contact textarea::placeholder {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.form-contact p:last-of-type {
+  grid-column: span 2;
+}
+
+.form-contact textarea {
+  width: 100%;
+  resize: none;
+  min-height: 169px;
+  border: none;
+  margin-top: 5px;
+  padding-top: 19px;
+  padding-left: 21px;
+  background-color: var(--gray-anotherone);
+  letter-spacing: 0.2px;
+  background-color: var(--gray-anotherone);
+}
+
+.button-contact {
+  background-color: transparent;
+  width: 200px;
+  border: none;
+  margin-bottom: 64px;
+  margin-top: 15px;
+}
+
+.button-contact::before {
+  width: 200px;
+}
+
+.modal-map {
+  width: 962px;
+  height: 560px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 40px;
+  right: 36px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -3px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 1;
+}
+
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: -16px;
+  width: 55px;
+  height: 55px;
+  background-color: var(--yellow-light);
+  border-radius: 50%;
+  opacity: 50%;
+}
+/*Modals End*/
