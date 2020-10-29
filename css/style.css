@@ -237,7 +237,7 @@ img {
   background-image: linear-gradient(
     var(--white-basic) var(--header-white-gradient),
     var(--yellow-light) var(--header-white-gradient));
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .main-nav {
