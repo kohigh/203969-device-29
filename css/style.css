@@ -221,10 +221,15 @@ img {
   z-index: -1;
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus:before {
   animation-name: btn_stretching;
   animation-duration: 0.15s;
   animation-fill-mode: forwards;
+}
+
+.button {
+  outline: none;
 }
 /* Global End */
 
