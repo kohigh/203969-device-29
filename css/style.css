@@ -853,10 +853,6 @@ img {
   margin-bottom: 103px;
 }
 
-.recommended .button::before {
-  width: 220px;
-}
-
 .recommended-list {
   margin: 0;
   padding: 0;
@@ -908,6 +904,11 @@ img {
   margin-right: auto;
   margin-top: 34px;
   padding-left: 44px;
+  padding-right: 39px;
+}
+
+.recommended .button::before {
+  width: 220px;
 }
 
 .recommended-product-table {
