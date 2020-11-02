@@ -1429,16 +1429,19 @@ img {
 }
 
 .footer-user-route-logged {
-  padding-left: 13px;
   margin-right: 24px;
+}
+
+.footer-user-route-logged .user-routes-link {
+  padding-left: calc(13px + var(--main-nav-login-icon-width));
 }
 
 .footer-user-route-logged .user-routes-link::before {
   content: "";
   position: absolute;
   top: 4px;
-  left: -26px;
-  width: 13px;
+  left: 0;
+  width: var(--main-nav-login-icon-width);
   height: 14px;
   background-image: url("../img/icon-user-yellow.svg");
   background-repeat: no-repeat;
@@ -1446,7 +1449,7 @@ img {
 }
 
 .footer-user-route-exit {
-  margin-right: 53px;
+  margin-right: 39px;
 }
 
 .footer-user-route-login .user-routes-link {
@@ -1610,6 +1613,7 @@ img {
   height: 100%;
   width: calc((100vw - var(--container-size)) / 2);
   background-color: var(--gray-light);
+  z-index: -1;
 }
 
 .products-header .section-title-uppercase {
@@ -2062,6 +2066,11 @@ img {
   background-image: url("../img/radio-checked.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input:focus + label {
+  outline: 2px solid var(--green-basic);
+  outline-offset: 3px;
 }
 
 .filter-button {
