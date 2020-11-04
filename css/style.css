@@ -1120,12 +1120,24 @@ img {
   margin-bottom: 90px;
 }
 
-.advantages-nav-item .button::before {
-  width: 160px;
-  left: -20px;
+.advantages-slider-controls .button {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  padding-right: 133px;
+  padding-left: 19.5px;
+  padding-top: 9.3px;
+  padding-bottom: 8.9px;
+  color: var(--black-basic)
 }
 
-.advantage-nav-current .button::before {
+.advantages-slider-controls .button::before {
+  width: 160px;
+  left: 0;
+  top: 16px;
+}
+
+.advantages-slider-controls .toggle-current.button::before {
   display: none;
 }
 
@@ -1142,14 +1154,14 @@ img {
   list-style: none;
 }
 
-.advantages-nav {
+.advantages-slider-controls {
   display: flex;
   min-width: var(--advantages-tags-text-width);
   flex-direction: column;
   position: relative;
 }
 
-.advantages-nav::before {
+.advantages-slider-controls::before {
   content: "";
   position: absolute;
   left: 277px;
@@ -1159,27 +1171,18 @@ img {
   background-color: var(--black-basic);
 }
 
-.advantages-nav-item {
-  text-align: center;
-  padding-right: 133px;
-  padding-left: 19.5px;
-  padding-top: 9.3px;
-  padding-bottom: 8.9px;
-  color: var(--black-basic)
-}
-
-.advantage-nav-current,
-.advantages-nav-item:active {
+.advantages-slider-controls .toggle-current,
+.advantages-slider-controls .toggle:active {
   background-color: var(--black-basic);
   color: var(--yellow-light);
 }
 
-.advantages-nav-item:active .button {
+.advantages-slider-controls .toggle:active {
   background-color: var(--black-basic);
   color: var(--yellow-light);
 }
 
-.advantages-nav-item:active .button:before {
+.advantages-slider-controls .toggle:active:before {
   display: none;
 }
 
@@ -1192,7 +1195,7 @@ img {
   line-height: 22px;
 }
 
-.advantages-nav-item:not(:first-child) {
+.advantages-slider-controls .toggle:not(:first-child) {
   margin-top: 21px;
 }
 
@@ -1204,7 +1207,7 @@ img {
   margin-left: var(--advantages-defitions-marginleft);
 }
 
-.advantage-nav-current:nth-child(3) {
+.advantages-nav-item.toggle-current:nth-child(3) {
   padding-bottom: 8px;
   margin-top: 22px;
 }
@@ -1214,7 +1217,7 @@ img {
   display: none;
 }
 
-.advantage-current {
+.advantages-definition.slide-current {
   display: block;
 }
 

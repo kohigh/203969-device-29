@@ -143,9 +143,9 @@
             </li>
           </ul>
           <div class="recommended-slider-controls">
-            <button class="toggle-current" type="button" aria-label="Первый слайд" data-id="1"></button>
-            <button type="button" aria-label="Второй слайд" data-id="2"></button>
-            <button type="button" aria-label="Третий слайд" data-id="3"></button>
+            <button class="toggle toggle-current" type="button" aria-label="Первый слайд" data-id="1"></button>
+            <button class="toggle" type="button" aria-label="Второй слайд" data-id="2"></button>
+            <button class="toggle" type="button" aria-label="Третий слайд" data-id="3"></button>
           </div>
         </div>
       </section>
@@ -187,13 +187,13 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества использования нашего интернет магазина!</h2>
         <div class="advantages_wrapper container">
-          <ul class="advantages-nav advantages-tags">
-            <li class="advantages-nav-item advantage-nav-current"><a class="button advantages-tag" href="./about.html">Доставка</a></li>
-            <li class="advantages-nav-item"><a class="button advantages-tag" href="./about.html">Гарантия</a></li>
-            <li class="advantages-nav-item "><a class="button advantages-tag" href="./about.html">Кредит</a></li>
-          </ul>
+          <div class="advantages-slider-controls">
+            <button class="button toggle toggle-current" type="button" data-id="1">Доставка</button>
+            <button class="button toggle" type="button" data-id="2">Гарантия</button>
+            <button class="button toggle" type="button" data-id="3">Кредит</button>
+          </div>
           <ul class="advantages-definitions">
-            <li class="advantages-definition advantage-current">
+            <li class="advantages-definition slide-current">
               <h3 class="advantage-title">Доставка</h3>
               <p class="advantage-description">
                 Мы с удовольствием доставим ваш товар прямо к вашему
