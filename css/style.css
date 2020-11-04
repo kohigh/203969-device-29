@@ -109,6 +109,24 @@
   }
 }
 
+@keyframes move-center {
+  20% {
+    transform: translateX(10%);
+  }
+  40% {
+    transform: translateX(20%);
+  }
+  60% {
+    transform: translateX(30%);
+  }
+  80% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -1404,11 +1422,14 @@ img {
 }
 
 .contacts .button {
+  border: none;
+  background-color: transparent;
   margin-left: -1px;
 }
 
 .contacts .button::before {
   left: 1px;
+  top: 9px;
 }
 /* Contactts End */
 
@@ -2145,13 +2166,20 @@ img {
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   z-index: 2;
+}
+
+.modal-active {
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  animation-name: move-center;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
 }
 
 .modal-contact {

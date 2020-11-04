@@ -27,3 +27,27 @@ const advantagesHandler = (event) => { toggleSlide('.advantages-definitions', ad
 for (let elem of advantagesToggles) {
   elem.addEventListener('click', advantagesHandler)
 }
+
+const showModal = (modal) => { modal.classList.add('modal-active') }
+
+const contactButton = document.querySelector('.contacts .button')
+const contactModal =  document.querySelector('.modal-contact')
+contactButton.addEventListener('click', (e) => { showModal(contactModal) })
+
+const mapButton = document.querySelector('.contact-us-container a')
+const mapModal =  document.querySelector('.modal-map')
+mapButton.addEventListener(
+  'click',
+  (e) => {
+    e.preventDefault()
+    showModal(mapModal)
+  }
+)
+
+const closePopupButtons = document.querySelectorAll('.modal-close')
+for (let close of closePopupButtons) {
+  close.addEventListener(
+    'click',
+    (e) => { document.querySelector('.modal.modal-active').classList.remove('modal-active') }
+  )
+}
