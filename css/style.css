@@ -841,7 +841,7 @@ img {
   display: block;
 }
 
-.slider-controls {
+.recommended-slider-controls {
   display: flex;
   width: 72px;
   justify-content: space-between;
@@ -850,7 +850,7 @@ img {
   top: 340px;
 }
 
-.slider-controls button {
+.recommended-slider-controls button {
   position: relative;
   cursor: pointer;
   padding: 0;
@@ -861,7 +861,7 @@ img {
   border: 1px solid var(--black-basic);
 }
 
-.slider-controls .current::before {
+.recommended-slider-controls .toggle-current::before {
   content: "";
   position: absolute;
   top: 2px;

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./js/index.js" async></script>
     <title>HTML Academy: Девайс</title>
   </head>
   <body class="page-body">
@@ -62,7 +63,7 @@
         <h2 class="visually-hidden">Рекомендуемые товары</h2>
         <div class="slider">
           <ul class="recommended-list">
-            <li class="slide slide-current">
+            <li class="slide slide-current" data-id="1">
               <article class="recommended-product">
                 <h3 class="visually-hidden">Селфи палка Pineapple selfie</h3>
                 <figure class="recommended-product-img">
@@ -90,7 +91,7 @@
                 </div>
               </article>
             </li>
-            <li class="slide">
+            <li class="slide" data-id="2">
               <article class="recommended-product">
                 <h3 class="visually-hidden">Фитнес браслет</h3>
                 <figure class="recommended-product-img">
@@ -114,7 +115,7 @@
                 </div>
               </article>
             </li>
-            <li class="slide">
+            <li class="slide" data-id="3">
               <article class="recommended-product">
                 <h3 class="visually-hidden">Квадрокоптер</h3>
                 <figure class="recommended-product-img">
@@ -141,10 +142,10 @@
               </article>
             </li>
           </ul>
-          <div class="slider-controls">
-            <button class="current" type="button" aria-label="Первый слайд"></button>
-            <button type="button" aria-label="Второй слайд"></button>
-            <button type="button" aria-label="Третий слайд"></button>
+          <div class="recommended-slider-controls">
+            <button class="toggle-current" type="button" aria-label="Первый слайд" data-id="1"></button>
+            <button type="button" aria-label="Второй слайд" data-id="2"></button>
+            <button type="button" aria-label="Третий слайд" data-id="3"></button>
           </div>
         </div>
       </section>
