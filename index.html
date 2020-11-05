@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="./js/index.js" async></script>
     <title>HTML Academy: Девайс</title>
   </head>
   <body class="page-body">
@@ -186,7 +185,7 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества использования нашего интернет магазина!</h2>
-        <div class="advantages_wrapper container">
+        <div class="advantages-wrapper container">
           <div class="advantages-slider-controls">
             <button class="button toggle toggle-current" type="button" data-id="1">Доставка</button>
             <button class="button toggle" type="button" data-id="2">Гарантия</button>
@@ -275,12 +274,12 @@
               <img src="img/map.jpg" width="560" height="222" alt="Карта проезда в офис онлайн магазина «Device»">
             </a>
           </div>
-          <button class="button" href="./about.html">Напишите нам</button>
+          <button class="button">Напишите нам</button>
         </section>
       </div>
     </main>
     <footer class="footer">
-      <div class="footer_wrapper container">
+      <div class="footer-wrapper container">
         <a class="footer-logo logo">
           <img src="./img/logo.svg" width="163" height="35" alt="Лого онлайн магазина «Device»">
         </a>
@@ -334,17 +333,17 @@
       <form class="form-contact" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label>
-            Ваше имя:<input class="contact-first-name" placeholder="Имя Фамилия">
+            Ваше имя:<input class="contact-first-name" placeholder="Имя Фамилия" name="name" required>
           </label>
         </p>
         <p>
           <label>
-            Ваш e-mail:<input  class="contact-last-name" placeholder="email@example.com">
+            Ваш e-mail:<input type="email" class="contact-last-name" placeholder="email@example.com" name="email" required>
           </label>
         </p>
         <p>
           <label>
-            Текст письма:<textarea  class="contact-text" placeholder="В свободной форме" rows="7"></textarea>
+            Текст письма:<textarea  class="contact-text" placeholder="В свободной форме" name="cover-letter" rows="7" required></textarea>
           </label>
         </p>
         <button class="button button-contact" type="submit">Отправить</button>
@@ -357,5 +356,6 @@
               width="962" height="560" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+    <script src="./js/index.js"></script>
   </body>
 </html>

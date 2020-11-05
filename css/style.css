@@ -93,7 +93,7 @@
 }
 
 /* Global Begin */
-@keyframes btn_stretching {
+@keyframes btn-stretching {
   from { height: 8px }
   25% {
     transform: scaleY(2);
@@ -110,20 +110,21 @@
 }
 
 @keyframes move-center {
+  from { transform: translateX(-50%) }
   20% {
-    transform: translateX(10%);
+    transform: translateX(-40%);
   }
   40% {
-    transform: translateX(20%);
+    transform: translateX(-30%);
   }
   60% {
-    transform: translateX(30%);
+    transform: translateX(-20%);
   }
   80% {
-    transform: translateX(40%);
+    transform: translateX(-10%);
   }
   100% {
-    transform: translateX(50%);
+    transform: translateX(0%);
   }
 }
 
@@ -245,7 +246,7 @@ img {
 
 .button:hover::before,
 .button:focus:before {
-  animation-name: btn_stretching;
+  animation-name: btn-stretching;
   animation-duration: 0.15s;
   animation-fill-mode: forwards;
 }
@@ -511,6 +512,7 @@ img {
 
 .user-routes-link {
   display: inline-block;
+  vertical-align: baseline;
   line-height: 20px;
   position: relative;
   color: inherit;
@@ -604,6 +606,7 @@ img {
 
 .site-routes-link {
   display: inline-block;
+  vertical-align: baseline;
   font-family: "Gilroy Bold", "Arial", sans-serif;
   letter-spacing: var(--letter-spacing);
   font-size: 18px;
@@ -945,6 +948,7 @@ img {
 
 .recommended .button {
   display: inline-block;
+  vertical-align: baseline;
   margin-right: auto;
   margin-top: 34px;
   padding-left: 44px;
@@ -1159,7 +1163,7 @@ img {
   display: none;
 }
 
-.advantages_wrapper {
+.advantages-wrapper {
   display: grid;
   grid-template-columns: min-content 1fr;
   margin-top: 164px;
@@ -1439,7 +1443,7 @@ img {
   color: var(--white-basic);
 }
 
-.footer_wrapper {
+.footer-wrapper {
   display: grid;
   position: relative;
   grid-template-areas:
@@ -1449,7 +1453,7 @@ img {
   padding-bottom: 41px;
 }
 
-.footer_wrapper::before {
+.footer-wrapper::before {
   content: "";
   position: absolute;
   left: 0;
@@ -2174,18 +2178,19 @@ img {
 .modal-active {
   display: block;
   top: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   animation-name: move-center;
-  animation-duration: 0.2s;
+  animation-duration: 0.15s;
   animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
 }
 
 .modal-contact {
   width: 960px;
   height: 550px;
-  font-family: "Gilroy Bold", Arial, sans-serif;
+  font-family: "Gilroy Bold", "Arial", sans-serif;
   background-color: var(--white-basic);
   font-size: 18px;
 }
