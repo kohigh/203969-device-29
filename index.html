@@ -2,8 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body class="page-body">
@@ -25,7 +25,7 @@
           </ul>
         </div>
         <ul class="main-nav-site-routes site-routes">
-          <li class="main-nav-site-catalog">
+          <li class="main-nav-site main-nav-site-catalog">
             <a class="site-routes-link" href="./catalog.html">Каталог товаров</a>
             <div class="header-catalog-wrapper">
               <ul class="header-catalog-columns catalog-columns">
@@ -50,9 +50,9 @@
               </ul>
             </div>
           </li>
-          <li class="main-nav-site-delivery"><a class="site-routes-link" href="./about.html">Доставка</a></li>
-          <li class="main-nav-site-warranty"><a class="site-routes-link" href="./about.html">Гарантия</a></li>
-          <li class="main-nav-site-contacts"><a class="site-routes-link" href="./about.html">Контакты</a></li>
+          <li class="main-nav-site main-nav-site-delivery"><a class="site-routes-link" href="./about.html">Доставка</a></li>
+          <li class="main-nav-site main-nav-site-warranty"><a class="site-routes-link" href="./about.html">Гарантия</a></li>
+          <li class="main-nav-site main-nav-site-contacts"><a class="site-routes-link" href="./about.html">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -62,13 +62,11 @@
         <h2 class="visually-hidden">Рекомендуемые товары</h2>
         <div class="slider">
           <ul class="recommended-list">
-            <li class="slide slide-current">
+            <li class="slide slide-current" data-id="1">
               <article class="recommended-product">
                 <h3 class="visually-hidden">Селфи палка Pineapple selfie</h3>
                 <figure class="recommended-product-img">
-                  <a href="./about.html">
-                    <img src="img/recommended-monopod.png" width="384" height="486" alt="Селфи палка «Pineapple selfie»">
-                  </a>
+                  <img src="img/recommended-monopod.png" width="384" height="486" alt="Селфи палка «Pineapple selfie»">
                 </figure>
                 <div  class="recommended-product-about">
                   <h4 class="section-title">Делай селфи,<br>как Бен Стиллер!</h4>
@@ -92,13 +90,11 @@
                 </div>
               </article>
             </li>
-            <li class="slide">
+            <li class="slide" data-id="2">
               <article class="recommended-product">
                 <h3 class="visually-hidden">Фитнес браслет</h3>
                 <figure class="recommended-product-img">
-                  <a href="./about.html">
-                    <img src="img/recommended-fitnesstracker.png" width="345" height="483" alt="Фитнестрекер">
-                  </a>
+                  <img src="img/recommended-fitnesstracker.png" width="345" height="483" alt="Фитнестрекер">
                 </figure>
                 <div  class="recommended-product-about">
                   <h4 class="section-title">Худеем<br>правильно!</h4>
@@ -118,13 +114,11 @@
                 </div>
               </article>
             </li>
-            <li class="slide">
+            <li class="slide" data-id="3">
               <article class="recommended-product">
                 <h3 class="visually-hidden">Квадрокоптер</h3>
                 <figure class="recommended-product-img">
-                  <a href="./about.html">
-                    <img src="img/recommended-quadcopter.png" width="526" height="334" alt="Квадрокоптер">
-                  </a>
+                  <img src="img/recommended-quadcopter.png" width="526" height="334" alt="Квадрокоптер">
                 </figure>
                 <div  class="recommended-product-about">
                   <h4 class="section-title">Порхает как бабочка, жалит&nbsp;как пчела!</h4>
@@ -147,10 +141,10 @@
               </article>
             </li>
           </ul>
-          <div class="slider-controls">
-            <button class="current" type="button" aria-label="Первый слайд"></button>
-            <button type="button" aria-label="Второй слайд"></button>
-            <button type="button" aria-label="Третий слайд"></button>
+          <div class="recommended-slider-controls">
+            <button class="toggle toggle-current" type="button" aria-label="Первый слайд" data-id="1"></button>
+            <button class="toggle" type="button" aria-label="Второй слайд" data-id="2"></button>
+            <button class="toggle" type="button" aria-label="Третий слайд" data-id="3"></button>
           </div>
         </div>
       </section>
@@ -160,7 +154,8 @@
           <li class="categories-route">
             <a class="categories-link categories-vr" href="./about.html">
               <p class="category-title">Виртуальная реальность</p>
-            </a></li>
+            </a>
+          </li>
           <li class="categories-route">
             <a class="categories-link categories-monopods" href="./about.html">
               <p class="category-title">Моноподы для&nbsp;селфи</p>
@@ -190,14 +185,14 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества использования нашего интернет магазина!</h2>
-        <div class="advantages_wrapper container">
-          <ul class="advantages-nav advantages-tags">
-            <li class="advantages-nav-item advantage-nav-current"><a class="button advantages-tag" href="./about.html">Доставка</a></li>
-            <li class="advantages-nav-item"><a class="button advantages-tag" href="./about.html">Гарантия</a></li>
-            <li class="advantages-nav-item "><a class="button advantages-tag" href="./about.html">Кредит</a></li>
-          </ul>
+        <div class="advantages-wrapper container">
+          <div class="advantages-slider-controls">
+            <button class="button toggle toggle-current" type="button" data-id="1">Доставка</button>
+            <button class="button toggle" type="button" data-id="2">Гарантия</button>
+            <button class="button toggle" type="button" data-id="3">Кредит</button>
+          </div>
           <ul class="advantages-definitions">
-            <li class="advantages-definition advantage-current">
+            <li class="advantages-definition slide-current">
               <h3 class="advantage-title">Доставка</h3>
               <p class="advantage-description">
                 Мы с удовольствием доставим ваш товар прямо к вашему
@@ -228,22 +223,22 @@
         <h2 class="visually-hidden">Наши партнёры</h2>
         <ul class="partners-nav partners-list">
           <li>
-            <a href="https://www.dji.com/">
+            <a class="partner-link" href="https://www.dji.com/">
               <img src="img/partners-dji.png" width="260" height="100" alt="Логотип компании «DJI»">
             </a>
           </li>
           <li>
-            <a href="http://www.sp-gadgets.com/">
+            <a class="partner-link" href="http://www.sp-gadgets.com/">
               <img src="img/partners-spgadgets.png" width="260" height="100" alt="Логотип компании «SP GADGETS»">
             </a>
           </li>
           <li>
-            <a href="https://gopro.com/en/us/">
+            <a class="partner-link" href="https://gopro.com/en/us/">
               <img src="img/partners-gopro.png" width="260" height="100" alt="Логотип компании «GoPro»">
             </a>
           </li>
           <li>
-            <a href="https://www.vive.com/eu/">
+            <a class="partner-link" href="https://www.vive.com/eu/">
               <img src="img/partners-vive.png" width="260" height="100" alt="Логотип компании «VIVE»">
             </a>
           </li>
@@ -279,19 +274,19 @@
               <img src="img/map.jpg" width="560" height="222" alt="Карта проезда в офис онлайн магазина «Device»">
             </a>
           </div>
-          <a class="button" href="./about.html">Напишите нам</a>
+          <button class="button">Напишите нам</button>
         </section>
       </div>
     </main>
     <footer class="footer">
-      <div class="footer_wrapper container">
-        <a class="footer-logo logo" href="./about.html">
+      <div class="footer-wrapper container">
+        <a class="footer-logo logo">
           <img src="./img/logo.svg" width="163" height="35" alt="Лого онлайн магазина «Device»">
         </a>
         <ul class="footer-user-routes user-routes">
-          <li class="footer-user-route-login"><a class="user-routes-link darkmode-link" href="./about.html">Войти</a></li>
-          <li class="footer-user-route-compare"><a class="user-routes-link darkmode-link" href="./about.html">Сравнить</a></li>
-          <li class="footer-user-route-cart"><a class="user-routes-link darkmode-link" href="./about.html">Корзина</a></li>
+          <li class="footer-user-route footer-user-route-login"><a class="user-routes-link darkmode-link" href="./about.html">Войти</a></li>
+          <li class="footer-user-route footer-user-route-compare"><a class="user-routes-link darkmode-link" href="./about.html">Сравнить</a></li>
+          <li class="footer-user-route footer-user-route-cart"><a class="user-routes-link darkmode-link" href="./about.html">Корзина</a></li>
         </ul>
         <address class="footer-address-phys address-phys" >г. Москва, ул. Строителей, 15</address>
         <a class="footer-address-tel address-tel" href="tel:+7(495)495-95-95">Тел.:  +7 (495) 495-95-95</a>
@@ -338,17 +333,18 @@
       <form class="form-contact" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label>
-            Ваше имя:<input placeholder="Имя Фамилия">
+            Ваше имя:<input placeholder="Имя Фамилия" name="name">
           </label>
         </p>
         <p>
           <label>
-            Ваш e-mail:<input placeholder="email@example.com">
+            Ваш e-mail:<input type="email" placeholder="email@example.com" name="email">
           </label>
         </p>
         <p>
           <label>
-            Текст письма:<textarea placeholder="В свободной форме" rows="7"></textarea>
+            Текст письма:
+            <textarea placeholder="В свободной форме" name="cover-letter" rows="7" ></textarea>
           </label>
         </p>
         <button class="button button-contact" type="submit">Отправить</button>
@@ -361,5 +357,6 @@
               width="962" height="560" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
+    <script src="./js/index.min.js"></script>
   </body>
 </html>
