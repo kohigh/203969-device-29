@@ -51,3 +51,34 @@ for (let close of closePopupButtons) {
     (e) => { document.querySelector('.modal.modal-active').classList.remove('modal-active') }
   )
 }
+
+function validateInput(input, msg) {
+  if (!input.value) {
+    input.setCustomValidity(msg)
+  } else {
+    input.setCustomValidity("")
+  }
+}
+
+const contactForm = document.querySelector('.form-contact')
+const submitButton = document.querySelector('.button-contact')
+const nameInput = document.querySelector('input[name=name]')
+const emailInput = document.querySelector('input[name=email]')
+const letterInput = document.querySelector('textarea[name=cover-letter]')
+
+submitButton.addEventListener(
+  'click',
+  (e) => {
+    validateInput(nameInput, "Накарябай имя, будь-ласочка!")
+    validateInput(emailInput, "А тут емэйлик!")
+    validateInput(letterInput, "Ну и причина обращения какая, неплохо бы установить!")
+
+    if (contactForm.checkValidity()) {
+      contactModal.classList.remove('modal-error')
+    } else {
+      contactModal.classList.add('modal-error')
+    }
+
+    setTimeout(() => { contactModal.classList.remove('modal-error') }, 100)
+  }
+)

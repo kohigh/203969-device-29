@@ -169,6 +169,50 @@
   }
 }
 
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 *,
 *:before,
 *:after {
@@ -1779,10 +1823,6 @@ img {
   z-index: -1;
 }
 
-.products-header .section-title-uppercase {
-  /*margin-top: 13px;*/
-}
-
 .products-list {
   margin: 0;
   padding: 0;
@@ -2275,14 +2315,22 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-animation-name: move-center;
-  animation-name: move-center;
+  /*TODO Fix reappearing of the window after resetting error-class in the callback*/
+  /*-webkit-animation-name: move-center;*/
+  /*animation-name: move-center;*/
+  /*-webkit-animation-duration: 0.15s;*/
+  /*animation-duration: 0.15s;*/
+  /*-webkit-animation-fill-mode: forwards;*/
+  /*animation-fill-mode: forwards;*/
+  /*-webkit-animation-timing-function: ease-out;*/
+  /*animation-timing-function: ease-out;*/
+}
+
+.modal-error {
+  -webkit-animation-name: shake;
+  animation-name: shake;
   -webkit-animation-duration: 0.15s;
   animation-duration: 0.15s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
 }
 
 .modal-contact {

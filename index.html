@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Девайс</title>
   </head>
   <body class="page-body">
@@ -333,17 +333,18 @@
       <form class="form-contact" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label>
-            Ваше имя:<input class="contact-first-name" placeholder="Имя Фамилия" name="name" required>
+            Ваше имя:<input placeholder="Имя Фамилия" name="name">
           </label>
         </p>
         <p>
           <label>
-            Ваш e-mail:<input type="email" class="contact-last-name" placeholder="email@example.com" name="email" required>
+            Ваш e-mail:<input type="email" placeholder="email@example.com" name="email">
           </label>
         </p>
         <p>
           <label>
-            Текст письма:<textarea  class="contact-text" placeholder="В свободной форме" name="cover-letter" rows="7" required></textarea>
+            Текст письма:
+            <textarea placeholder="В свободной форме" name="cover-letter" rows="7" ></textarea>
           </label>
         </p>
         <button class="button button-contact" type="submit">Отправить</button>
@@ -356,6 +357,6 @@
               width="962" height="560" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
-    <script src="./js/index.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
